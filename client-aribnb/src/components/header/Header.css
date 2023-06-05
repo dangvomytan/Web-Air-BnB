@@ -1,0 +1,101 @@
+.inner_nav
+{
+/* border:  1px  solid #DDDDDD; */
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+}
+.inner_nav .logo
+{
+     
+}
+.inner_nav .middle
+{
+     border:  1px  solid #DDDDDD;
+     width: 34rem;
+     height: 3rem;
+     padding: 0 .2rem;
+     border-radius: 3rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 1px 5px 18px #ced6e0;
+}
+.inner_nav .middle .card
+{
+     width: 28rem;
+     /* border:  1px  solid gold; */
+     display: flex;
+     justify-content: space-around    ;
+}
+.prame_2
+{
+     background-color: #FF385C;
+     border-radius: 50%;
+     padding: .3rem;
+     align-items: center;
+}
+.inner_nav .right_part{
+     /* border:  1px  solid blue; */
+     width: 15rem;
+     height: 3rem;
+}
+.inner_nav .right_part .middle_user
+{
+ width: 6.5rem;
+ height: 3rem;
+ float: right;
+ border-radius: 3rem;
+ border:  1px  solid #DDDDDD;
+ display: flex;
+ box-shadow: 1px 5px 18px #ced6e0;
+}
+.inner_nav-2
+{
+     /* border:  1px  solid #de0000; */
+}
+.middle-2
+{
+     width: 50rem;
+     height: 4.2rem;
+     border-radius: 3rem;
+     margin: auto;
+     border:  1px  solid blue;
+     display: flex;
+}
+.card-2
+{
+     /* border:  1px  solid rgb(128, 255, 0); */
+     width: 14rem;
+     padding: 0 1.5rem;
+     border-radius: 3rem;
+}
+.card-3
+{
+     /* border:  1px  solid rgb(128, 255, 0); */
+     width: 9rem;
+     padding: 0 1.5rem;
+     border-radius: 3rem;
+}
+.card-4
+{
+     /* border:  1px  solid rgb(128, 255, 0); */
+     width: 18rem;
+     padding: 0 1.5rem;
+     border-radius: 3rem;
+     display: flex;
+     justify-content: space-between;
+     padding-right: 0.5rem;
+     align-items: center;
+}
+.card-btn
+{
+     /* border:  1px  solid goldenrod; */
+     float: right;
+}
+.card-4 button
+{
+     width: 8rem;;
+height: 3rem;
+border-radius: 3rem;
+}
