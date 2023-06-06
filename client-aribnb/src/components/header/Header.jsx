@@ -1,7 +1,7 @@
 // 
 import logo from '../../assets/images/logo/logo.png'
 import React from 'react'
-// import './Header.css'
+import './Header.css'
 import 'boxicons'
 
 
@@ -13,11 +13,11 @@ function Header() {
                <img src={logo} alt=""/>
                </div>
           <div className='middle'>
-               <div className='card'>
+               {/* <div className='card'>
                <div>Any where</div>
                <div>Any week</div>
                <div>Add gueste</div>
-               </div>
+               </div> */}
 
                <div className='prame_2'>
                <box-icon name='search'></box-icon>
@@ -33,7 +33,7 @@ function Header() {
                     </div>
                </div>
      </div>
-     <div className='inner_nav-2'>
+     {/* <div className='inner_nav-2'>
          <div className='middle-2 '>
                <div className='card-2'>
                     <p> Any where</p>
@@ -57,7 +57,7 @@ function Header() {
                    </div>
                     </div>
          </div>
-     </div>
+     </div> */}
     </>
   )
 }

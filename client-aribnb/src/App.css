@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font-roboto);
+}
+:root{
+  --color-bg: ;
+  --color-border:#7f8fa6;
+  --color-outline:#70a1ff;
+  --color-white: white;
+  --color-box-shadow:#7f8fa6;
+  --color-button:#273c75;
+  --color-button-hover:#192a56;
+  --color-button-action:#273c75;
+  --color-text: #353b48;
+ --font-roboto: 'Roboto', sans-serif;
+ --size-icon-star:15px;
+ --color-icon-heart: #f1f2f6;
 }

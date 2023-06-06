@@ -1,5 +1,184 @@
 {
   "users": [
-
+    {
+      "email": "tanadmin@gmail.com",
+      "password": "$2a$10$vg2cDwW5XDDLv8.dez7V8uuA8MKHakrKXL4lenqqrHyBYfOCTEopW",
+      "name": "tan",
+      "id": 1
+    },
+    {
+      "email": "tan@gmail.com",
+      "password": "$2a$10$0cGJp.UV45wl65CDwj1KvOjBdMNXTqm44JL6b6EimMYBUu7zJBtGW",
+      "name": "tan",
+      "id": 2
+    },
+    {
+      "email": "tanadmin1@gmail.com",
+      "password": "$2a$10$uuy.C8zH/JkVnttjWmznMuPfTihkYWWhsfCqoC8A5rz1jWHZ1G8r6",
+      "name": "tan",
+      "id": 3
+    },
+    {
+      "email": "tung@gmail.com",
+      "password": "$2a$10$UcJbKqMNOfj4p8tcqaOGpu0BP1uA.l0fUGfcFGfBFWEepcejNlFJa",
+      "name": "tung",
+      "id": 4
+    },
+    {
+      "email": "hieu@gmail.com",
+      "password": "$2a$10$WuHkzcZjON4ynEeU1Ik7SugGIKCht/5oSdOB/xFx1W5vHriDHDk1m",
+      "name": "hieu",
+      "id": 5
+    },
+    {
+      "email": "hoang@gmail.com",
+      "password": "$2a$10$Kdz.wdezHI4T2flXE6RHT.6xFmWku6FG6IFHopfkOKzDH5Cwo/Fl2",
+      "name": "hoang",
+      "id": 6
+    },
+    {
+      "email": "hoang1@gmail.com",
+      "password": "$2a$10$GuDgf7GtNzUCvzantsY.e.StfB099xmImCis2agxCowyoLFxpE/EC",
+      "name": "hoang",
+      "id": 7
+    },
+    {
+      "email": "tanadmia33@gmail.com",
+      "password": "$2a$10$j9l.R5MNz1Me2GTYBsVQB.sxMtjfKJKlRzw7213NP5gxKI1b.cedy",
+      "name": "tan",
+      "id": 8
+    },
+    {
+      "email": "tanadmin333@gmail.com",
+      "password": "$2a$10$zrcJTKQs2ar7l9KezPpySuX09YgjVRd19S2aoj8miyuu3qmMZsjzq",
+      "name": "tan",
+      "id": 9
+    },
+    {
+      "email": "tanadmin33344@gmail.com",
+      "password": "$2a$10$18Ktes/HjIctc2CpF10yoeQaspWsOGyU90OuiG/OK7K2BOLbzg/7G",
+      "name": "tan",
+      "id": 10
+    },
+    {
+      "email": "tanadminasda@gmail.com",
+      "password": "$2a$10$dN6SDIczNOKbSk6BEYH1jutj/VXDk9NVAAYyYzQaxS8HXUYd9Hz56",
+      "name": "tung",
+      "id": 11
+    },
+    {
+      "email": "tanadmin144@gmail.com",
+      "password": "$2a$10$XwrBduQaIhAjuu2deSMSjOetWwtw9Tco5bvzD4cJjnkhhW/iVrrwG",
+      "name": "tan",
+      "id": 12
+    },
+    {
+      "email": "tanadmin16644@gmail.com",
+      "password": "$2a$10$Epk8zYxug/Mzr5SC3aEjlOWA1L39WvtgJSkfY7mVN6fqOogxV2rTu",
+      "name": "tan",
+      "id": 13
+    },
+    {
+      "email": "tanadminew@gmail.com",
+      "password": "$2a$10$gCtpc9TUuoRM292DV1M1VultvkTEK4Me4bJKyDV4jHNTEuI9M98/G",
+      "name": "tan",
+      "id": 14
+    },
+    {
+      "email": "tanadminsdf@gmail.com",
+      "password": "$2a$10$qpL2grAqZApXC4EeiZDkxusNa3ujqoFy1KJxlND.1Sh1XSYiZ/wUG",
+      "name": "tan",
+      "id": 15
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "nameBnb": "",
+      "category": "Beach",
+      "type": {},
+      "addressBnb": "",
+      "reviews": 0,
+      "price": "200",
+      "images": [],
+      "status": true
+    },
+    {
+      "id": 1,
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "category": "Countryside",
+      "type": {
+        "guests": 4,
+        " bedroom": 1,
+        "beds": 2,
+        "private bath": 1
+      },
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "reviews": 0,
+      "price": "37",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
+        "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
+        "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 2,
+      "nameBnb": "Separate Bungalows-Fansipan mountain view",
+      "category": "Countryside",
+      "type": {
+        "guests": 8,
+        "bedrooms": 2,
+        "beds": 4,
+        "shared baths": 3
+      },
+      "addressBnb": "Sa Pa, Lào Cai, Vietnam",
+      "reviews": 0,
+      "price": "36",
+      "images": [
+        "https://a0.muscache.com/im/pictures/be56e64a-37a1-427e-9681-60e65bba11b7.jpg",
+        "https://a0.muscache.com/im/pictures/902bb01d-e0c4-40ae-b4ca-0525b11d1c26.jpg",
+        "https://a0.muscache.com/im/pictures/0896789b-b174-43fc-b95b-cee5e96f5068.jpg",
+        "https://a0.muscache.com/im/pictures/25ac64ce-25be-4865-9e51-fb91267c7681.jpg",
+        "https://a0.muscache.com/im/pictures/fc384054-a455-4593-aaed-64a1457fac70.jpg"
+      ],
+      "status": true
+    },
+    {
+      "id": 3,
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "category": "Countryside",
+      "type": {
+        "guests": 4,
+        "bedroom": 1,
+        "beds": 2,
+        "private bath": 1
+      },
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "reviews": 0,
+      "price": "32",
+      "images": [
+        "https://a0.muscache.com/im/pictures/593acddf-257b-471e-b0f1-7d1611a295ff.jpg",
+        "https://a0.muscache.com/im/pictures/5b6625da-84a8-4015-9046-a68d9244debd.jpg",
+        "https://a0.muscache.com/im/pictures/007e1b21-5c87-4a3d-8f90-71a7d86d8b76.jpg",
+        "https://a0.muscache.com/im/pictures/83132da3-a828-4405-b539-7865e826ab74.jpg",
+        "https://a0.muscache.com/im/pictures/6cd39a1a-4b3a-4756-ad8c-15b5b2153ded.jpg"
+      ],
+      "status": true
+    },
+    {
+      "id": 4,
+      "nameBnb": "Enjoy Beautiful Sunrise from Beachfront suite",
+      "category": "Beach",
+      "type": {},
+      "addressBnb": "",
+      "reviews": 0,
+      "price": "200",
+      "images": [],
+      "status": true
+    }
   ]
 }

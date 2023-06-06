@@ -1,0 +1,74 @@
+.lp_Container {
+     border: 1px solid red;
+     max-width: 1400px;
+     margin: auto;
+     height: 500px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.5rem;
+     padding: 2rem;
+
+}
+
+.lp_Card {
+     /* border: 1px solid green; */
+     width: 100%;
+     position: relative;
+}
+
+.lp_Card_image {
+     max-width: 100%;
+     height: 18rem;
+     background-color: gray;
+     border-radius: 1rem;
+}
+
+.lp_Card_image img {
+     width: 100%;
+     height: 100%;
+     border-radius: 1rem;
+     object-fit: cover;
+}
+
+.lp_Card_title {
+     /* border: 1px solid red; */
+     display: flex;
+     justify-content: space-between;
+     font-family: var(--font-roboto);
+     padding-top: 0.5rem;
+}
+
+.title_name {
+     /* border: 1px   blue; */
+     width: 80%;
+     padding: .1rem .5rem;
+     font-size: 1.1em;
+}
+
+.icon_star {
+     /* border: 1px   yellow; */
+     width: 20%;
+     padding: .1rem .2rem;
+     font-size: 1.1em;
+     text-align: center;
+}
+
+.icon-heart {
+     width: 2rem;
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     cursor: pointer;
+     z-index: 100;
+}
+
+.lp_Card_conten {
+     /* border: 1px  solid yellow; */
+     padding: .1rem .5rem;
+}
+
+.lp_Card_price {
+     /* border: 1px  solid blue; */
+     padding: .1rem .5rem;
+     font-size: 1.1em;
+}

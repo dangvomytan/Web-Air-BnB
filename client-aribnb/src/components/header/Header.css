@@ -1,6 +1,6 @@
 .inner_nav
 {
-/* border:  1px  solid #DDDDDD; */
+border:  1px  solid #DDDDDD;
 padding: 1rem;
 display: flex;
 justify-content: space-between;
@@ -24,9 +24,9 @@ justify-content: space-between;
 .inner_nav .middle .card
 {
      width: 28rem;
-     /* border:  1px  solid gold; */
+     border:  1px  solid gold;
      display: flex;
-     justify-content: space-around    ;
+     /* justify-content: space-around    ; */
 }
 .prame_2
 {
