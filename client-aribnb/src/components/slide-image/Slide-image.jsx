@@ -13,7 +13,7 @@ import "./Slide-image.css";
 import { EffectCreative } from "swiper";
 
 
-function SlideImage() {
+function SlideImage(props) {
      return (
           <Swiper
           grabCursor={true}
@@ -29,16 +29,14 @@ function SlideImage() {
           }}
           modules={[EffectCreative]}
           className="mySwiper"
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+        > 
+        {props.images.map((item,index)=>{
+          return(
+            <SwiperSlide key={index}>
+              <img src={item} alt="" />
+            </SwiperSlide>
+          )
+        })}
         </Swiper>
           )
 }

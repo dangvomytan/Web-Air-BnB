@@ -2,6 +2,7 @@ import React from 'react'
 import './ListProduct.css'
 import SlideImage from '../slide-image/Slide-image'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -10,352 +11,47 @@ import { useDispatch, useSelector } from 'react-redux'
 function ListProduct() {
      // const dispatch = useDispatch();
      const ProductData = useSelector((state) => state.product);
+     const navigate = useNavigate();
+     
+     const handleOnClickRooms =(item) =>{
+               console.log("item>>>", item);
+               navigate('/detail',{state:item});
+     }
 
-     console.log("list>>>",ProductData);
 
      return (
           <div className='lp_Container'>
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <img src="https://a0.muscache.com/im/pictures/d6880d5f-2d42-49eb-b3d3-366b9d285d6c.jpg?im_w=720" alt="" />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='icon_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-                    <div className='icon-heart'>
-                         <box-icon name='heart' size='md' color='var(--color-icon-heart)' type='solid' animation='tada' ></box-icon>
-                    </div>
-               </div>
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-                    <div className='icon-heart'>
-                         <box-icon name='heart' size='md' color='var(--color-icon-heart)' type='solid' animation='tada' ></box-icon>
-                    </div>
-               </div>
-               {/* ===================================================== */}
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-
-               <var><div className='lp_Card'>
-                    <div className='lp_Card_image'>
-                         <SlideImage />
-                    </div>
-                    <div className='lp_Card_title'>
-                         <div className='title_name'>
-                              <b>ten sdfsdfadf as sa</b>
-                         </div>
-                         <div className='title_star'>
-                              <span>5.0</span>
-                              <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                         </div>
-                    </div>
-                    <div className='lp_Card_conten'>
-                         conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                    </div>
-                    <div className='lp_Card_price'>
-                         <b>$ <span>200</span></b>
-                    </div>
-               </div>
-                    <div className='lp_Card'>
-                         <div className='lp_Card_image'>
-                              <SlideImage />
-                         </div>
-                         <div className='lp_Card_title'>
-                              <div className='title_name'>
-                                   <b>ten sdfsdfadf as sa</b>
+               {
+                    ProductData.map((item) => {
+                         return (
+                              <div key={item.id} onClick={()=>handleOnClickRooms(item)}>
+                                   <div className='lp_Card'>
+                                        <div className='lp_Card_image'>
+                                             <SlideImage images={item.images}/>
+                                        </div>
+                                        <div className='lp_Card_title'>
+                                             <div className='title_name'>
+                                                  <b>{item.nameBnb}</b>
+                                             </div>
+                                             <div className='title_star'>
+                                                  <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>    
+                                                  {"  "}
+                                                  <span>{item.reviews}</span>
+                                             </div>
+                                        </div>
+                                        <div className='lp_Card_conten'>{"  "}</div>
+                                        <div className='lp_Card_price'>
+                                             <b>$ <span>{item.price}</span></b> <span>night</span>
+                                        </div>
+                                        <div className='icon-heart'>
+                                             <box-icon name='heart' size='md' color='var(--color-icon-heart)' type='solid' animation='tada' ></box-icon>
+                                        </div>
+                                   </div>
                               </div>
-                              <div className='title_star'>
-                                   <span>5.0</span>
-                                   <box-icon name='star' size="var(--size-icon-star)" type='solid' ></box-icon>
-                              </div>
-                         </div>
-                         <div className='lp_Card_conten'>
-                              conten ;fsj afj s afsdfj as;f asjfl jsaldf al;sf lsajfl s
-                         </div>
-                         <div className='lp_Card_price'>
-                              <b>$ <span>200</span></b>
-                         </div>
-                    </div>
-               </var>
+                         )
+                    })
+               }
 
-               {/* ======================================================= */}
           </div>
      )
 }

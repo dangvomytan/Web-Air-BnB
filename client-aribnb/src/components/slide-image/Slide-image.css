@@ -1,5 +1,5 @@
 .swiper {
-     max-width: 19rem;
+     max-width: 18.5rem;
      height: 18rem;
      border-radius: 1rem;
    }
@@ -13,7 +13,7 @@
      color: #fff;
    }
    
-   .swiper-slide:nth-child(1n) {
+   /* .swiper-slide:nth-child(1n) {
      background-color: rgb(206, 17, 17);
    }
    
@@ -47,7 +47,7 @@
    
    .swiper-slide:nth-child(9n) {
      background-color: rgb(218, 12, 218);
-   }
+   } */
    
    .swiper-slide:nth-child(10n) {
      background-color: rgb(54, 94, 77);

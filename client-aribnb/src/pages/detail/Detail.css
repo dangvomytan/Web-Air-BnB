@@ -1,0 +1,176 @@
+.detail_body {
+  max-width: 1400px;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+.dp_container {
+  width: 98%;
+  /* border: 1px solid blue; */
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.dp_container .dp_title {
+  /* border: 1px solid yellow; */
+}
+
+.dp_container .dp_title h3 {
+  margin: 0;
+}
+
+.dp_container .detail-image {
+  margin: 1rem auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  gap: 1rem;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.gallery__item {
+  height: 100%;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  /* background-color: chartreuse; */
+  border-top-left-radius: 1rem;
+}
+
+.gallery__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  /* background-color: aqua; */
+
+}
+
+.gallery__item--3 {
+
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  /* background-color: bisque; */
+
+
+}
+
+.gallery__item--4 {
+
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  /* background-color: rgb(44, 84, 84); */
+
+}
+
+.gallery__item--5 {
+
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  /* background-color: coral; */
+}
+
+/* ======================= */
+.detail_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
+
+}
+
+.card_detail {
+  flex: 68%;
+  /* border: 1px solid green; */
+}
+
+.card_reservation {
+  flex: 30%;
+  border: 1px solid var(--color-border);
+  box-shadow: 2px 5px 18px var(--color-box-shadow);
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card_reservation .item_1 {
+  display: flex;
+}
+
+.card_reservation .item_2 {
+  flex: 60%;
+  padding: 0.5rem;
+
+}
+
+.card_reservation .item_2 span {
+  font-family: 'Anek Gujarati';
+  font-size: 2.1em;
+}
+
+.card_reservation .item_3 {
+  flex: 40%;
+  padding: 0.5rem;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+.card_reservation .item_4 {
+  /* border: 1px solid green; */
+  border-radius: 1rem;
+}
+
+.card_reservation .item_5 {
+  /* border: 1px solid red; */
+  display: flex;
+  border-radius: 1rem;
+}
+
+.card_reservation .item_6 {
+  flex: 50%;
+  padding: 0.5rem;
+}
+
+.card_reservation .item_6 input {
+  border: none;
+  outline: none;
+}
+
+.card_reservation .item_7 {
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.card_reservation .item_8 {
+
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card_reservation .item_8 button {
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+}

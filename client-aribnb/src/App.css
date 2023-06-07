@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Roboto+Mono&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -16,6 +18,9 @@
   --color-button-action:#273c75;
   --color-text: #353b48;
  --font-roboto: 'Roboto', sans-serif;
+ --font-Anek-Gujarati:  'Anek Gujarati';
+ --font-Anek-Gujarati: 'Anek Gujarati';
+ --font-Roboto-Mono: 'Roboto Mono';
  --size-icon-star:15px;
  --color-icon-heart: #f1f2f6;
 }

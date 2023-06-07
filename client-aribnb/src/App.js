@@ -8,6 +8,7 @@ import Home from './pages/home/Home';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { reducerAllProduct } from './redux/reducer/ProductSlice';
+import Detail from './pages/detail/Detail';
 
 function App() {
   const dispatch=  useDispatch();
@@ -21,6 +22,7 @@ function App() {
 <>
 <Routes>
   <Route path='/' index element={<Home/>}/>
+  <Route path='/detail' element={<Detail/>}/>
   <Route path='/auth'>
     <Route path='sign-up' element={<SignUp/>}/>
     <Route path='sign-in' element={<SignIn/>}/>

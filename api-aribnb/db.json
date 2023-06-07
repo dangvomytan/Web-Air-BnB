@@ -93,17 +93,6 @@
   ],
   "products": [
     {
-      "id": 0,
-      "nameBnb": "",
-      "category": "Beach",
-      "type": {},
-      "addressBnb": "",
-      "reviews": 0,
-      "price": "200",
-      "images": [],
-      "status": true
-    },
-    {
       "id": 1,
       "nameBnb": "Nature lodge hosted by Nguyen",
       "category": "Countryside",
@@ -111,7 +100,7 @@
         "guests": 4,
         " bedroom": 1,
         "beds": 2,
-        "private bath": 1
+        "bath": 1
       },
       "addressBnb": "Sa Pa, Lao Cai, Vietnam",
       "reviews": 0,
@@ -133,7 +122,7 @@
         "guests": 8,
         "bedrooms": 2,
         "beds": 4,
-        "shared baths": 3
+        "baths": 3
       },
       "addressBnb": "Sa Pa, Lào Cai, Vietnam",
       "reviews": 0,
@@ -155,7 +144,7 @@
         "guests": 4,
         "bedroom": 1,
         "beds": 2,
-        "private bath": 1
+        "bath": 1
       },
       "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
       "reviews": 0,
@@ -171,14 +160,179 @@
     },
     {
       "id": 4,
-      "nameBnb": "Enjoy Beautiful Sunrise from Beachfront suite",
-      "category": "Beach",
-      "type": {},
-      "addressBnb": "",
+      "nameBnb": "Place to stay in a bed and breakfast hosted by Khiem",
+      "category": "Countryside",
+      "type": {
+        "guests":2,
+        "bedroom": 1,
+        "bed":1,
+        "bath": 1
+      },
+      "addressBnb": "Trường Yên, Ninh Bình, Vietnam",
       "reviews": 0,
-      "price": "200",
-      "images": [],
+      "price": "13",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/a4d94380-466b-455f-af2c-0e3d816b5bc5.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/c2c782ad-43b0-467c-b825-1f1f90df664d.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/d98af501-08b3-4e48-a86d-33b20fc59bff.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/7913e3cc-7574-41c9-9db0-d70020410f69.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/8498ccd7-fda1-4f8b-9f3a-da2a83432bd1.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 5,
+      "nameBnb": "Entire rental unit hosted by Anh Tuan",
+      "category": "Beach",
+      "type": {
+        "guests":6,
+        "bedroom": 2,
+        "bed":3,
+        "bath": 2
+      },
+      "addressBnb": "Ngũ Hành Sơn, Đà Nẵng, Vietnam",
+      "reviews": 0,
+      "price": "39",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-862241171562102822/original/800df11b-a12d-42c3-9abc-03d152424290.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-862241171562102822/original/c55d6351-bf0d-445d-8353-695539bc3dd0.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-862241171562102822/original/3bf2348a-a286-4899-86b8-5b09b801c92a.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-862241171562102822/original/2a16589d-761e-47da-8731-740019090957.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-862241171562102822/original/2f6d6509-14ea-41a8-92af-ec85e3a13911.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 6,
+      "nameBnb": "Entire rental unit hosted by Vũ Thị Phương",
+      "category": "Beach",
+      "type": {
+        "guests":4,
+        "bedroom": 1,
+        "bed":1,
+        "bath": 1
+      },
+      "addressBnb": "Sơn Trà, Đà Nẵng, Vietnam",
+      "reviews": 0,
+      "price": "40",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-677793190977710470/original/fbb42a93-15b3-4678-b2f3-2482409917cb.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-677793190977710470/original/6708185a-038c-4718-862a-252a0ab7894f.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-677793190977710470/original/f4d6ba5f-d985-4f7e-9d8a-672577b05760.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-677793190977710470/original/b19c7f5b-35eb-4776-afce-7413babb077f.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-677793190977710470/original/fb9fb403-b469-417e-8610-6edd1581ed55.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 7,
+      "nameBnb": "Room in a serviced apartment hosted by Ngoc",
+      "category": "Beach",
+      "type": {
+        "guests":3,
+        "bedroom": 1,
+        "bed":2,
+        "bath": 1
+      },
+      "addressBnb": "Mân Thái, Đà Nẵng, Vietnam",
+      "reviews": 0,
+      "price": "13",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-27741832/original/1beb0225-f4f9-411b-b244-f0dd561fba93.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-27741832/original/15df3061-d9de-4d2d-9706-5ebdab8af69d.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-27741832/original/e070b565-e01f-48eb-abdc-d726d6b678b0.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-27741832/original/f195ea5f-a3f2-4eb5-9752-e2cf873656a9.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-27741832/original/7366f945-c14e-48c1-8461-089068d6b3e4.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 8,
+      "nameBnb": "Room in a hotel hosted by Ly",
+      "category": "Beach",
+      "type": {
+        "guests":2,
+        "bedroom": 1,
+        "bed":1,
+        "bath": 1
+      },
+      "addressBnb": "Phước Mỹ, Đà Nẵng, Vietnam",
+      "reviews": 0,
+      "price": "87",
+      "images": [
+        "https://a0.muscache.com/im/pictures/4528c936-ff59-4ba1-8efb-279f44758283.jpg",
+        "https://a0.muscache.com/im/pictures/a02a2552-962a-4b20-adbe-54e673f579d9.jpg",
+        "https://a0.muscache.com/im/pictures/62777a7b-1096-4d74-8609-cdc6320468c4.jpg",
+        "https://a0.muscache.com/im/pictures/2253de83-7a3c-4368-ae01-969ad67498cf.jpg",
+        "https://a0.muscache.com/im/pictures/b0e69e38-0afb-4d72-bfc1-36366aa4cab9.jpg"
+      ],
+      "status": true
+    },
+    {
+      "id": 9,
+      "nameBnb": "Entire bungalow hosted by Viet Anh",
+      "category": "Tiny homes",
+      "type": {
+        "guests":2,
+        "bedroom": 1,
+        "bed":1,
+        "bath": 1
+      },
+      "addressBnb": "Minh Phú, Hà Nội, Vietnam",
+      "reviews": 0,
+      "price": "103",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29172819/original/8dae018e-ee08-4956-ab90-4a451e96e424.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29172819/original/1babdf09-e230-475b-a5a1-15322b5c8322.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29172819/original/0818fd2e-46dc-4c53-89e1-7d70762987e2.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29172819/original/aa09a8ed-3010-451b-af6b-0b3579b38c7d.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29172819/original/6f8e6276-c8d8-4808-b695-03c76899ba8f.jpeg"
+      ],
+      "status": true
+    },
+    {
+      "id": 10,
+      "nameBnb": "Place to stay in a tiny home hosted by Sin Suoi Ho Bungalow And Homestay",
+      "category": "Tiny homes",
+      "type": {
+        "guests":4,
+        "bedroom": 1,
+        "bed":2,
+        "bath": 1
+      },
+      "addressBnb": "Phong Thổ District, Lai Chau, Vietnam",
+      "reviews": 0,
+      "price": "51",
+      "images": [
+        "https://a0.muscache.com/im/pictures/8fb5846e-bb22-43d0-97f7-8a53aa86880f.jpg",
+        "https://a0.muscache.com/im/pictures/9e2d773a-d827-4b9e-afec-3910d57e1cb1.jpg",
+        "https://a0.muscache.com/im/pictures/8b3ac559-f3ea-451a-af07-77c206e2db52.jpg",
+        "https://a0.muscache.com/im/pictures/38bb4646-af6f-49e7-ac27-40b910d01636.jpg",
+        "https://a0.muscache.com/im/pictures/3965d2da-a7c1-4706-9cf2-1b91a5f3c353.jpg"
+      ],
+      "status": true
+    },{
+      "id": 11,
+      "nameBnb": "Entire bungalow hosted by Cay Sao Beach",
+      "category": "Cabins",
+      "type": {
+        "guests":2,
+        "bedroom": 1,
+        "bed":2,
+        "bath": 1
+      },
+      "addressBnb": "Thành phố Phú Quốc, tỉnh Kiên Giang, Vietnam",
+      "reviews": 0,
+      "price": "13",
+      "images": [
+        "https://a0.muscache.com/im/pictures/df3000c2-75cc-43c4-b547-0f23b2268f86.jpg",
+        "https://a0.muscache.com/im/pictures/bc7f6b56-0f6a-4962-8420-8c75c6896c4c.jpg",
+        "https://a0.muscache.com/im/pictures/210f18bf-a4af-452b-9e58-8b4463fd90de.jpg",
+        "https://a0.muscache.com/im/pictures/210f18bf-a4af-452b-9e58-8b4463fd90de.jpg",
+        "https://a0.muscache.com/im/pictures/8426b997-fa2e-45fc-a058-5b77b3e32fa8.jpg"
+      ],
       "status": true
     }
   ]
 }
+
