@@ -89,6 +89,12 @@
       "password": "$2a$10$qpL2grAqZApXC4EeiZDkxusNa3ujqoFy1KJxlND.1Sh1XSYiZ/wUG",
       "name": "tan",
       "id": 15
+    },
+    {
+      "email": "tandang@gmail.com",
+      "password": "$2a$10$hDmvCoZTKvQQgdXcInpJ7uJLCPnhidtfJ1Q3BOu6GKYXxu6NMnAjG",
+      "name": "tan dang",
+      "id": 16
     }
   ],
   "products": [
@@ -163,9 +169,9 @@
       "nameBnb": "Place to stay in a bed and breakfast hosted by Khiem",
       "category": "Countryside",
       "type": {
-        "guests":2,
+        "guests": 2,
         "bedroom": 1,
-        "bed":1,
+        "bed": 1,
         "bath": 1
       },
       "addressBnb": "Trường Yên, Ninh Bình, Vietnam",
@@ -185,9 +191,9 @@
       "nameBnb": "Entire rental unit hosted by Anh Tuan",
       "category": "Beach",
       "type": {
-        "guests":6,
+        "guests": 6,
         "bedroom": 2,
-        "bed":3,
+        "bed": 3,
         "bath": 2
       },
       "addressBnb": "Ngũ Hành Sơn, Đà Nẵng, Vietnam",
@@ -207,9 +213,9 @@
       "nameBnb": "Entire rental unit hosted by Vũ Thị Phương",
       "category": "Beach",
       "type": {
-        "guests":4,
+        "guests": 4,
         "bedroom": 1,
-        "bed":1,
+        "bed": 1,
         "bath": 1
       },
       "addressBnb": "Sơn Trà, Đà Nẵng, Vietnam",
@@ -229,9 +235,9 @@
       "nameBnb": "Room in a serviced apartment hosted by Ngoc",
       "category": "Beach",
       "type": {
-        "guests":3,
+        "guests": 3,
         "bedroom": 1,
-        "bed":2,
+        "bed": 2,
         "bath": 1
       },
       "addressBnb": "Mân Thái, Đà Nẵng, Vietnam",
@@ -251,9 +257,9 @@
       "nameBnb": "Room in a hotel hosted by Ly",
       "category": "Beach",
       "type": {
-        "guests":2,
+        "guests": 2,
         "bedroom": 1,
-        "bed":1,
+        "bed": 1,
         "bath": 1
       },
       "addressBnb": "Phước Mỹ, Đà Nẵng, Vietnam",
@@ -273,9 +279,9 @@
       "nameBnb": "Entire bungalow hosted by Viet Anh",
       "category": "Tiny homes",
       "type": {
-        "guests":2,
+        "guests": 2,
         "bedroom": 1,
-        "bed":1,
+        "bed": 1,
         "bath": 1
       },
       "addressBnb": "Minh Phú, Hà Nội, Vietnam",
@@ -295,9 +301,9 @@
       "nameBnb": "Place to stay in a tiny home hosted by Sin Suoi Ho Bungalow And Homestay",
       "category": "Tiny homes",
       "type": {
-        "guests":4,
+        "guests": 4,
         "bedroom": 1,
-        "bed":2,
+        "bed": 2,
         "bath": 1
       },
       "addressBnb": "Phong Thổ District, Lai Chau, Vietnam",
@@ -311,14 +317,15 @@
         "https://a0.muscache.com/im/pictures/3965d2da-a7c1-4706-9cf2-1b91a5f3c353.jpg"
       ],
       "status": true
-    },{
+    },
+    {
       "id": 11,
       "nameBnb": "Entire bungalow hosted by Cay Sao Beach",
       "category": "Cabins",
       "type": {
-        "guests":2,
+        "guests": 2,
         "bedroom": 1,
-        "bed":2,
+        "bed": 2,
         "bath": 1
       },
       "addressBnb": "Thành phố Phú Quốc, tỉnh Kiên Giang, Vietnam",
@@ -335,4 +342,3 @@
     }
   ]
 }
-

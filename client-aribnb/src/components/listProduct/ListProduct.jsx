@@ -14,8 +14,8 @@ function ListProduct() {
      const navigate = useNavigate();
      
      const handleOnClickRooms =(item) =>{
-               console.log("item>>>", item);
-               navigate('/detail',{state:item});
+               // console.log("item>>>", item);
+               navigate('/rooms',{state:item});
      }
 
 

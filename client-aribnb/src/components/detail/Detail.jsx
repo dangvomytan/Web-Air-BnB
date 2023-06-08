@@ -1,5 +1,5 @@
 import './Detail.css'
-import Header from '../../components/header/Header'
+import Header from '../header/Header'
 import { useEffect, useMemo, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -51,14 +51,13 @@ function Detail() {
      },[rentalDuration])
 
 
-     console.log("startDate", startDate);
-     console.log("endDate", endDate);
-     console.log("rentalDuration", rentalDuration);
+     // console.log("startDate", startDate);
+     // console.log("endDate", endDate);
+     // console.log("rentalDuration", rentalDuration);
 
      return (
           <>
                <div className='detail_body'>
-                    <Header />
                     <div className='dp_container'>
                          <div className='dp_title'>
                               <div>
@@ -157,5 +156,4 @@ function Detail() {
 
      )
 }
-
 export default Detail
