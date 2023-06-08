@@ -20,7 +20,8 @@ function ListProduct() {
 
 
      return (
-          <div className='lp_Container'>
+          <div className='list_product_body'>
+          <div className='list_product_content'>
                {
                     ProductData.map((item) => {
                          return (
@@ -53,6 +54,8 @@ function ListProduct() {
                }
 
           </div>
+          </div>
+
      )
 }
 

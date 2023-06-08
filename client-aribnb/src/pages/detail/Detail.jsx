@@ -1,14 +1,60 @@
 import './Detail.css'
 import Header from '../../components/header/Header'
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { useLocation } from 'react-router-dom';
+import moment from 'moment';
 
 function Detail() {
      const [key, setKey] = useState('home');
      const location = useLocation();
-     console.log("item>>>", location.state);
+     const [startDate, setStartDate] = useState('');
+     const [endDate, setEndDate] = useState('');
+     const [total,setTotal] =  useState(0)
+
+     // Lấy ngày hiện tại
+     const currentDate = moment().format('YYYY-MM-DD');
+
+     const rentalDuration = useMemo(() => {
+          if (endDate && startDate) {
+               const duration = moment(endDate).diff(moment(startDate), 'days');
+               return duration;
+          }
+     }, [endDate, startDate]);
+
+
+     const handleOnchangeStartDate = (e) => {
+          const formattedDate = moment(e.target.value).format('YYYY-MM-DD');
+          if (formattedDate <= endDate || !endDate) {
+               setStartDate(formattedDate);
+          } else {
+
+               alert("Ngày bắt đàu nhỏ hơn hoặc bằng ngày bắt đầu.");
+          }
+     };
+
+     const handleOnchangeEndDate = (e) => {
+          const formattedDate = moment(e.target.value).format('YYYY-MM-DD');
+          if (formattedDate >= startDate) {
+               setEndDate(formattedDate);
+          } else {
+               alert("Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu.");
+          }
+     };
+     useEffect(()=>{
+          if(rentalDuration)
+          {
+               const total = Number(location.state.price)*Number(rentalDuration)
+               setTotal(total)
+          }
+     },[rentalDuration])
+
+
+     console.log("startDate", startDate);
+     console.log("endDate", endDate);
+     console.log("rentalDuration", rentalDuration);
+
      return (
           <>
                <div className='detail_body'>
@@ -19,26 +65,26 @@ function Detail() {
                                    <h3>{location.state.nameBnb}</h3>
                               </div>
                               <div>
-                                   
+
                                    <san>{location.state.reviews}</san> <span>reviews</span>{' - '}
                                    <span>{location.state.addressBnb}</span>
                               </div>
                          </div>
                          <div className='detail-image'>
-                              <div class="gallery">
-                                   <figure class="gallery__item gallery__item--1">
+                              <div className="gallery">
+                                   <figure className="gallery__item gallery__item--1">
                                         <img src={location.state.images[0]} alt="" />
                                    </figure>
-                                   <figure class="gallery__item gallery__item--2">
+                                   <figure className="gallery__item gallery__item--2">
                                         <img src={location.state.images[1]} alt="" />
                                    </figure>
-                                   <figure class="gallery__item gallery__item--3">
+                                   <figure className="gallery__item gallery__item--3">
                                         <img src={location.state.images[2]} alt="" />
                                    </figure>
-                                   <figure class="gallery__item gallery__item--4">
+                                   <figure className="gallery__item gallery__item--4">
                                         <img src={location.state.images[3]} alt="" />
                                    </figure>
-                                   <figure class="gallery__item gallery__item--5">
+                                   <figure className="gallery__item gallery__item--5">
                                         <img src={location.state.images[4]} alt="" />
                                    </figure>
                               </div>
@@ -67,23 +113,31 @@ function Detail() {
                               <div className='card_reservation'>
                                    <div className='item_1'>
                                         <div className='item_2'>
-                                             <span>$ {location.state.price}</span>
+                                             <span>$ {total>location.state.price?total:location.state.price}</span>
                                         </div>
                                         <div className='item_3'>
-                                        <box-icon size="xs" name='star'></box-icon>
-                                        <span> 4,84  </span>
-                                           <span> - {location.state.reviews} reviews</span>
+                                             <box-icon size="xs" name='star'></box-icon>
+                                             <span> 4,84  </span>
+                                             <span> - {location.state.reviews} reviews</span>
                                         </div>
                                    </div>
                                    <div className='item_4'>
                                         <div className='item_5'>
                                              <div className='item_6'>
                                                   CHECK-IN
-                                                  <input type="date" />
+                                                  <input
+                                                       type="date"
+                                                       min={currentDate}
+                                                       value={startDate}
+                                                       onChange={handleOnchangeStartDate} />
                                              </div>
                                              <div className='item_6'>
                                                   CHECK-OUT
-                                                  <input type="date" />
+                                                  <input
+                                                       type="date"
+                                                       min={currentDate}
+                                                       value={endDate}
+                                                       onChange={handleOnchangeEndDate} />
                                              </div>
                                         </div>
                                         {/* <div className='item_7'>
