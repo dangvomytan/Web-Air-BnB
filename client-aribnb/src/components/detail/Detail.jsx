@@ -5,13 +5,14 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { useLocation } from 'react-router-dom';
 import moment from 'moment';
+import { ToastContainer, toast } from 'react-toastify';
 
 function Detail() {
      const [key, setKey] = useState('home');
      const location = useLocation();
      const [startDate, setStartDate] = useState('');
      const [endDate, setEndDate] = useState('');
-     const [total,setTotal] =  useState(0)
+     const [total, setTotal] = useState(0)
 
      // Lấy ngày hiện tại
      const currentDate = moment().format('YYYY-MM-DD');
@@ -29,8 +30,7 @@ function Detail() {
           if (formattedDate <= endDate || !endDate) {
                setStartDate(formattedDate);
           } else {
-
-               alert("Ngày bắt đàu nhỏ hơn hoặc bằng ngày bắt đầu.");
+               toastError();
           }
      };
 
@@ -39,24 +39,59 @@ function Detail() {
           if (formattedDate >= startDate) {
                setEndDate(formattedDate);
           } else {
-               alert("Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu.");
+               toastError();
           }
      };
-     useEffect(()=>{
-          if(rentalDuration)
-          {
-               const total = Number(location.state.price)*Number(rentalDuration)
+     useEffect(() => {
+          if (rentalDuration) {
+               const total = Number(location.state.price) * Number(rentalDuration)
                setTotal(total)
           }
-     },[rentalDuration])
+     }, [rentalDuration])
+
+     const toastError = () => {
+          toast.error('Please check your booking information!', {
+               position: "top-right",
+               autoClose: 5000,
+               hideProgressBar: false,
+               closeOnClick: true,
+               pauseOnHover: true,
+               draggable: true,
+               progress: undefined,
+               theme: "light",
+          });
+     }
+
+     const handleClickReseve = () =>{
+          if(endDate && startDate)
+          {
+               const bookingData = {...location.state,startDate:startDate,endDate:endDate,currentDate:currentDate};
+               console.log("bookingData",bookingData);
+          }
+          else
+          {
+               toastError();
+          }
+     }
 
 
-     // console.log("startDate", startDate);
-     // console.log("endDate", endDate);
-     // console.log("rentalDuration", rentalDuration);
 
      return (
           <>
+               <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+               />
+               {/* Same as */}
+               <ToastContainer />
                <div className='detail_body'>
                     <div className='dp_container'>
                          <div className='dp_title'>
@@ -112,7 +147,7 @@ function Detail() {
                               <div className='card_reservation'>
                                    <div className='item_1'>
                                         <div className='item_2'>
-                                             <span>$ {total>location.state.price?total:location.state.price}</span>
+                                             <span>$ {location.state.price}</span>
                                         </div>
                                         <div className='item_3'>
                                              <box-icon size="xs" name='star'></box-icon>
@@ -123,7 +158,7 @@ function Detail() {
                                    <div className='item_4'>
                                         <div className='item_5'>
                                              <div className='item_6'>
-                                                  CHECK-IN
+                                                  <span>CHECK-IN  </span>
                                                   <input
                                                        type="date"
                                                        min={currentDate}
@@ -131,7 +166,8 @@ function Detail() {
                                                        onChange={handleOnchangeStartDate} />
                                              </div>
                                              <div className='item_6'>
-                                                  CHECK-OUT
+                                                  <span>CHECK-OUT  </span>
+                                                  
                                                   <input
                                                        type="date"
                                                        min={currentDate}
@@ -143,8 +179,27 @@ function Detail() {
                                              GUEST
                                         </div> */}
                                         <div className='item_8'>
-                                             <button>CHECK AVAILABILITY</button>
+                                             <button onClick={handleClickReseve}>{endDate && startDate ? "RESERVE" : "CHECK AVAILABILITY"}</button>
                                         </div>
+                                        {endDate && startDate ? (<div className='item_9'>
+                                             <div className='item_10'>
+                                                  <div className='item_11'>
+                                                       <span> $ {location.state.price} x {rentalDuration ? rentalDuration : '1'} night</span>
+                                                  </div>
+                                                  <div className='item_11'>
+                                                       <span>$ {total < location.state.price ? location.state.price : total}</span>
+                                                  </div>
+                                             </div>
+                                             <div className='item_10'>
+                                                  <div className='item_11'>
+                                                       <span>TOTAL</span>
+                                                  </div>
+                                                  <div className='item_11'>
+                                                       <span>$ {total < location.state.price ? location.state.price : total}</span>
+                                                  </div>
+                                             </div>
+                                        </div>) : ("")}
+
 
                                    </div>
                               </div>

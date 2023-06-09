@@ -95,6 +95,12 @@
       "password": "$2a$10$hDmvCoZTKvQQgdXcInpJ7uJLCPnhidtfJ1Q3BOu6GKYXxu6NMnAjG",
       "name": "tan dang",
       "id": 16
+    },
+    {
+      "email": "phuc@gmail.com",
+      "password": "$2a$10$6SyeVT5Jg8Zk9iLNPJhuFuzAKTp1n5ZZNvd8FsDNPlluSm2zB66Vy",
+      "name": "Phuc",
+      "id": 17
     }
   ],
   "products": [

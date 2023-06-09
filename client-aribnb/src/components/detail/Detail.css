@@ -158,13 +158,12 @@
 }
 
 .card_reservation .item_7 {
-  /* border: 1px solid red; */
+
   border-radius: 1rem;
   padding: 0.5rem;
 }
 
 .card_reservation .item_8 {
-
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: center;
@@ -173,4 +172,31 @@
 .card_reservation .item_8 button {
   border-radius: 1rem;
   padding: 1rem 3rem;
+  color: var(--color-button);
+  background-color: #c7ecee;
+}
+.card_reservation .item_9 {
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.card_reservation .item_10 {
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
+}
+.card_reservation .item_11 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.card_reservation .item_11 span
+ {
+  font-size: 1.5em;
+  font-family: 'Anek Gujarati';
 }
