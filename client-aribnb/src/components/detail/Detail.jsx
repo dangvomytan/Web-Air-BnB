@@ -3,16 +3,18 @@ import Header from '../header/Header'
 import { useEffect, useMemo, useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import moment from 'moment';
 import { ToastContainer, toast } from 'react-toastify';
 
 function Detail() {
      const [key, setKey] = useState('home');
      const location = useLocation();
+     const navigate = useNavigate();
      const [startDate, setStartDate] = useState('');
      const [endDate, setEndDate] = useState('');
      const [total, setTotal] = useState(0)
+
 
      // Lấy ngày hiện tại
      const currentDate = moment().format('YYYY-MM-DD');
@@ -65,8 +67,8 @@ function Detail() {
      const handleClickReseve = () =>{
           if(endDate && startDate)
           {
-               const bookingData = {...location.state,startDate:startDate,endDate:endDate,currentDate:currentDate};
-               console.log("bookingData",bookingData);
+               const bookingData = {...location.state,startDate:startDate,endDate:endDate};
+               navigate("/stays/pay",{state:{...bookingData}});
           }
           else
           {

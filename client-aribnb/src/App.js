@@ -8,6 +8,8 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { reducerAllProduct } from './redux/reducer/ProductSlice';
 import Rooms from './pages/rooms/Rooms';
+import Pay from './components/pay/Pay';
+import IsStays from './components/IsStays/IsStays';
 
 function App() {
   const dispatch=  useDispatch();
@@ -25,6 +27,9 @@ function App() {
   <Route path='/auth'>
     <Route path='sign-up' element={<SignUp/>}/>
     <Route path='sign-in' element={<SignIn/>}/>
+  </Route>
+  <Route path='/stays' element={<IsStays/>}>
+    <Route path='pay' element={<Pay/>}/>
   </Route>
 </Routes>
 </>
