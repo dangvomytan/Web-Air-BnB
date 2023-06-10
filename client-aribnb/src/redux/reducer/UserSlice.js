@@ -19,10 +19,16 @@ export const login = createAsyncThunk("login/fetchAuth", async (payload) => {
     return responce;
 });
 
+export const getDataUser =  createAsyncThunk("getAllUser", async () =>{
+  const responce = await UserAPI.getAllUser();
+  console.log(33,responce);
+  return responce;
+
+})
 
 const userSlice = createSlice({
   name: "user",
-  initialState: {},
+  initialState: [],
   reducers:{
     logout:(state)=>{
       localStorage.removeItem("Users");
@@ -38,6 +44,10 @@ const userSlice = createSlice({
       state = action.payload.user;
       return state;
     },
+    [getDataUser.fulfilled]:(state, action) =>{
+      state = action.payload;
+      return state;
+    }
   },
 });
 const { actions, reducer } = userSlice;
@@ -45,3 +55,4 @@ const { actions, reducer } = userSlice;
 export const { logout } = actions;
 
 export default reducer;
+

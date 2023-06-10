@@ -44,9 +44,9 @@ function ListProduct() {
                                         <div className='lp_Card_price'>
                                              <b>$ <span>{item.price}</span></b> <span>night</span>
                                         </div>
-                                        <div className='icon-heart'>
+                                        {/* <div className='icon-heart'>
                                              <box-icon name='heart' size='md' color='var(--color-icon-heart)' type='solid' animation='tada' ></box-icon>
-                                        </div>
+                                        </div> */}
                                    </div>
                               </div>
                          )

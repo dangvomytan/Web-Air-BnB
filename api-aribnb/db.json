@@ -101,6 +101,12 @@
       "password": "$2a$10$6SyeVT5Jg8Zk9iLNPJhuFuzAKTp1n5ZZNvd8FsDNPlluSm2zB66Vy",
       "name": "Phuc",
       "id": 17
+    },
+    {
+      "email": "tan123456@gmail.com",
+      "password": "$2a$10$DMf0Zmi5jEhlNTPl9UjHEelf2E/hGmU6GY0ytz5KjIvX/VikGMJjO",
+      "name": "tan123456",
+      "id": 18
     }
   ],
   "products": [
@@ -345,6 +351,28 @@
         "https://a0.muscache.com/im/pictures/8426b997-fa2e-45fc-a058-5b77b3e32fa8.jpg"
       ],
       "status": true
+    }
+  ],
+  "reserve": [
+    {
+      "userName": "1",
+      "addressUser": "2",
+      "phone": "3",
+      "id": 1
+    },
+    {
+      "userName": "1",
+      "addressUser": "2",
+      "phone": "3",
+      "method": "Credit or debit card",
+      "id": 2
+    },
+    {
+      "method": "Credit or debit card",
+      "userName": "fgf",
+      "addressUser": "fg",
+      "phone": "fgf",
+      "id": 3
     }
   ]
 }

@@ -4,13 +4,17 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button, Form } from 'react-bootstrap';
 import moment from 'moment';
 import { ToastContainer, toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { addReserve } from '../../redux/reducer/ReserveSlice';
 
 function Pay() {
      const location = useLocation();
      const [startDate, setStartDate] = useState('');
      const [endDate, setEndDate] = useState('');
      const [total, setTotal] = useState(0)
+     const [valueInput,setValueInput] = useState([]);
      const navigate = useNavigate();
+     const dispatch = useDispatch();
 
 
      // Lấy ngày hiện tại
@@ -64,6 +68,12 @@ function Pay() {
                progress: undefined,
                theme: "light",
           });
+     }
+     const handleOnchange = (e) => {
+          setValueInput({...valueInput,[e.target.name]:e.target.value})
+     }
+     const handleOnclick = () =>{
+         dispatch(addReserve(valueInput)).unwrap();
      }
 
      return (
@@ -124,7 +134,7 @@ function Pay() {
                                         <h4><b>Pay with</b></h4>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Select size="lg">
+                                        <Form.Select size="lg" name='method' onChange={handleOnchange}>
                                              <option value={"Direct payment"}>Direct payment</option>
                                              <option value={"Credit or debit card"}>Credit or debit card</option>
                                         </Form.Select>
@@ -146,17 +156,17 @@ function Pay() {
                                         <h4><b>Your info</b></h4>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="Your name" />
+                                        <Form.Control type="text" placeholder="Your name" name='userName' onChange={handleOnchange}/>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="Address" />
+                                        <Form.Control type="text" placeholder="Address"  name='addressUser'  onChange={handleOnchange}/>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="phone" />
+                                        <Form.Control type="text" placeholder="phone" name='phone' onChange={handleOnchange}/>
                                    </div>
                                    <hr />
                                    <div>
-                                        <Button variant="secondary">Secondary</Button>{' '}
+                                        <Button variant="secondary" onClick={()=>handleOnclick()}>Secondary</Button>{' '}
                                    </div>
                               </div>
                               <div className='pay_detail'>
@@ -173,7 +183,7 @@ function Pay() {
                                         <hr />
                                         <div className='item_12'>
                                              <div>
-                                                  <span>{location.state.price} x {rentalDuration} nights</span>
+                                                  <span>$ {location.state.price} x {rentalDuration} nights</span>
                                              </div>
                                              <div><span>$ {total < location.state.price ? location.state.price : total}</span></div>
                                         </div>

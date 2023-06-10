@@ -66,7 +66,7 @@ console.log(userLogin);
                                    <div className="item_0-track">
                                         <div className="item_0-thumb">
                                              <div className={`item_1${isActive ? '-active' : ''}`}>
-                                                  <box-icon type='solid' color={isActive ? 'var(--color-white)' : '#a4b0be'} size='md' name='user-detail'></box-icon>
+                                                  <box-icon type='solid' color={isActive ? 'var(--color-white)' : '#a4b0be'} size='ms' name='user-detail'></box-icon>
                                              </div>
                                         </div>
                                    </div>
