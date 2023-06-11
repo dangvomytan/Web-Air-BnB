@@ -418,6 +418,72 @@
       "total": 224,
       "status": false,
       "id": 14
+    },
+    {
+      "addressUser": "sdf",
+      "phone": "sad234",
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 224,
+      "status": false,
+      "id": 15
+    },
+    {
+      "email": "tandang@gmail.com",
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 0,
+      "status": false,
+      "id": 16
+    },
+    {
+      "email": "tandang@gmail.com",
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 0,
+      "status": false,
+      "id": 17
+    },
+    {
+      "email": "tandang@gmail.com",
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 0,
+      "status": false,
+      "id": 18
+    },
+    {
+      "email": "tandang@gmail.com",
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 224,
+      "status": false,
+      "id": 19
     }
   ]
 }

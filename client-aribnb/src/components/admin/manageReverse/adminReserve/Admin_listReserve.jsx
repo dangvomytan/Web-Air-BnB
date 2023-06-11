@@ -19,6 +19,7 @@ function Admin_listReserve() {
      <thead>
        <tr>
          <th>#</th>
+         <th>Email</th>
          <th>Name BnB</th>
          <th>AddressBnb</th>
          <th>Start Date</th>
@@ -34,6 +35,7 @@ function Admin_listReserve() {
            return (
              <tr key={item.id}>
                <td>{index+1}</td>
+               <td>{item.email}</td>
                <td>{item.nameBnb}</td>
                <td>{item.addressBnb}</td>
                <td>{item.startDate}</td>

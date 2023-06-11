@@ -18,8 +18,7 @@ function Pay() {
      const [isTrus, setIstrue] = useState(true)
      const navigate = useNavigate();
      const dispatch = useDispatch();
-
-
+     const user = JSON.parse(localStorage.getItem("Users"));
      // Lấy ngày hiện tại
      const currentDate = moment().format('YYYY-MM-DD');
 
@@ -62,6 +61,7 @@ function Pay() {
      useEffect(() => {
           setInfoBooking({
                ...valueInput,
+               email: user.email,
                nameBnb: location.state.nameBnb,
                addressBnb: location.state.addressBnb,
                price: location.state.price,
@@ -106,6 +106,9 @@ function Pay() {
                     progress: undefined,
                     theme: "light",
                });
+               setTimeout(() => {
+                    navigate("/stays/trips");
+                  }, 2000);
           }
           else {
                toastError();
@@ -193,17 +196,17 @@ function Pay() {
                                         <h4><b>Your info</b></h4>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="Your name" name='userName' onChange={handleOnchange} />
+                                        <Form.Control type="text" placeholder="Email" name='email' value={user.email} readOnly />
                                    </div>
                                    <div className='item_2'>
                                         <Form.Control type="text" placeholder="Address" name='addressUser' onChange={handleOnchange} />
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="phone" name='phone' onChange={handleOnchange} />
+                                        <Form.Control type="number" placeholder="phone" name='phone' onChange={handleOnchange} />
                                    </div>
                                    <hr />
                                    <div>
-                                        <Button variant="secondary" onClick={() => handleOnclick()}>Secondary</Button>{' '}
+                                        <Button variant="secondary" onClick={() => handleOnclick()}>Confirm pay</Button>{' '}
                                    </div>
                               </div>
                               <div className='pay_detail'>

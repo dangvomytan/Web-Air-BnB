@@ -18,6 +18,7 @@ import Admin_Room from './pages/admin/rooms/Admin_Room';
 import { reducerAllReserve } from './redux/reducer/ReserveSlice';
 import Admin_Reserve from './pages/admin/reserve/Admin_Reserve';
 import ConfirmPay from './pages/confirm-pay/Confirm-pay';
+import Trips from './pages/trips/Trips';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
   <Route path='/stays' element={<IsStays/>}>
     <Route path='comfirm-pay' element={<ConfirmPay/>}/>
     <Route path='pay' element={<Pay/>}/>
+    <Route path='trips' element={<Trips/>}/>
   </Route>
   <Route path='/Admin' element={<Admin/>}>
     <Route path='manage-user' element={<Admin_User/>}/>
