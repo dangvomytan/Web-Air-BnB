@@ -2,111 +2,159 @@
   "users": [
     {
       "email": "tanadmin@gmail.com",
-      "password": "$2a$10$vg2cDwW5XDDLv8.dez7V8uuA8MKHakrKXL4lenqqrHyBYfOCTEopW",
+      "password": "$2a$10$ROB/ATYMkwFMUomBhFP/iO60y6MdiYyX2Cs7f2XNstkPmL7qodQGK",
       "name": "tan",
-      "id": 1
+      "id": 1,
+      "status": true
     },
     {
       "email": "tan@gmail.com",
-      "password": "$2a$10$0cGJp.UV45wl65CDwj1KvOjBdMNXTqm44JL6b6EimMYBUu7zJBtGW",
+      "password": "$2a$10$d2t2b.sdqyiOUQkKRdCNheTdf4.AzgoBPJeSy06hgoN1UKDCZfUGu",
       "name": "tan",
-      "id": 2
+      "id": 2,
+      "status": true
     },
     {
       "email": "tanadmin1@gmail.com",
-      "password": "$2a$10$uuy.C8zH/JkVnttjWmznMuPfTihkYWWhsfCqoC8A5rz1jWHZ1G8r6",
+      "password": "$2a$10$WJPrdqnA/GEFHjPLlXZqJOFgB28/MFZp3/t5DdMxIhR5CisKlA8ey",
       "name": "tan",
-      "id": 3
+      "id": 3,
+      "status": true
     },
     {
       "email": "tung@gmail.com",
-      "password": "$2a$10$UcJbKqMNOfj4p8tcqaOGpu0BP1uA.l0fUGfcFGfBFWEepcejNlFJa",
+      "password": "$2a$10$QZglIxGmSfwNCslt25RQz.pfCpj1rFboP8csjq.dGTizAsUx3QXvG",
       "name": "tung",
-      "id": 4
+      "id": 4,
+      "status": false
     },
     {
       "email": "hieu@gmail.com",
-      "password": "$2a$10$WuHkzcZjON4ynEeU1Ik7SugGIKCht/5oSdOB/xFx1W5vHriDHDk1m",
+      "password": "$2a$10$51Apf0gCkrw.CncVhFH9w.B0M1xXcejbSYxQZgz1A4nQ2iCSFKB9m",
       "name": "hieu",
-      "id": 5
+      "id": 5,
+      "status": true
     },
     {
       "email": "hoang@gmail.com",
-      "password": "$2a$10$Kdz.wdezHI4T2flXE6RHT.6xFmWku6FG6IFHopfkOKzDH5Cwo/Fl2",
+      "password": "$2a$10$dLBnpaWewEK935bG4W5EtuPdzK3enV1BguLeJhPZ29PDkL3COpgHK",
       "name": "hoang",
-      "id": 6
+      "id": 6,
+      "status": true
     },
     {
       "email": "hoang1@gmail.com",
-      "password": "$2a$10$GuDgf7GtNzUCvzantsY.e.StfB099xmImCis2agxCowyoLFxpE/EC",
+      "password": "$2a$10$QeR9VylY9bWHFpNSuITPQ.5F.YDrBl/jaWoDTfk5b0HutjsMcOCMS",
       "name": "hoang",
-      "id": 7
+      "id": 7,
+      "status": true
     },
     {
       "email": "tanadmia33@gmail.com",
-      "password": "$2a$10$j9l.R5MNz1Me2GTYBsVQB.sxMtjfKJKlRzw7213NP5gxKI1b.cedy",
+      "password": "$2a$10$VZwBBwzpFKJaw/ttq4iSL.kPxyJdEb4.hcg0iZnvbabLcxxu21wKm",
       "name": "tan",
-      "id": 8
+      "id": 8,
+      "status": true
     },
     {
       "email": "tanadmin333@gmail.com",
-      "password": "$2a$10$zrcJTKQs2ar7l9KezPpySuX09YgjVRd19S2aoj8miyuu3qmMZsjzq",
+      "password": "$2a$10$EcHcFqcqQmHF4v3km6y.b.xMBPtfs53Zc7hTg5Afg.XVKXKi0o5jq",
       "name": "tan",
-      "id": 9
+      "id": 9,
+      "status": true
     },
     {
       "email": "tanadmin33344@gmail.com",
       "password": "$2a$10$18Ktes/HjIctc2CpF10yoeQaspWsOGyU90OuiG/OK7K2BOLbzg/7G",
       "name": "tan",
-      "id": 10
+      "id": 10,
+      "status": "true"
     },
     {
       "email": "tanadminasda@gmail.com",
       "password": "$2a$10$dN6SDIczNOKbSk6BEYH1jutj/VXDk9NVAAYyYzQaxS8HXUYd9Hz56",
       "name": "tung",
-      "id": 11
+      "id": 11,
+      "status": "true"
     },
     {
       "email": "tanadmin144@gmail.com",
-      "password": "$2a$10$XwrBduQaIhAjuu2deSMSjOetWwtw9Tco5bvzD4cJjnkhhW/iVrrwG",
+      "password": "$2a$10$V3y33OHvzP6ULeLODnNXy.4TJ6hzWUGb4pSggboUZTYSBzMV6hgGa",
       "name": "tan",
-      "id": 12
+      "id": 12,
+      "status": true
     },
     {
       "email": "tanadmin16644@gmail.com",
-      "password": "$2a$10$Epk8zYxug/Mzr5SC3aEjlOWA1L39WvtgJSkfY7mVN6fqOogxV2rTu",
+      "password": "$2a$10$FkK4nqnkYGd.NzzaWBQiautGG4sBWX9787AIT09CVVqPG9PY9M2eG",
       "name": "tan",
-      "id": 13
+      "id": 13,
+      "status": true
     },
     {
       "email": "tanadminew@gmail.com",
-      "password": "$2a$10$gCtpc9TUuoRM292DV1M1VultvkTEK4Me4bJKyDV4jHNTEuI9M98/G",
+      "password": "$2a$10$BWyP9aGrdiqFNSPFHz7Dc.Yf0sgbUf63gBVSfxCnbHgaHaHVFm06.",
       "name": "tan",
-      "id": 14
+      "id": 14,
+      "status": true
     },
     {
       "email": "tanadminsdf@gmail.com",
-      "password": "$2a$10$qpL2grAqZApXC4EeiZDkxusNa3ujqoFy1KJxlND.1Sh1XSYiZ/wUG",
+      "password": "$2a$10$oSFWjz5L2Q8RdufUXElReexDIhu2F6MAIt1X7He7j2FV65a0nZTNq",
       "name": "tan",
-      "id": 15
+      "id": 15,
+      "status": true
     },
     {
       "email": "tandang@gmail.com",
-      "password": "$2a$10$hDmvCoZTKvQQgdXcInpJ7uJLCPnhidtfJ1Q3BOu6GKYXxu6NMnAjG",
+      "password": "$2a$10$1aKokwuKOfjSeszDypXMiO9VosDpJdmSqA2AiZTcEJgLHomwARw3G",
       "name": "tan dang",
-      "id": 16
+      "id": 16,
+      "status": true
     },
     {
       "email": "phuc@gmail.com",
-      "password": "$2a$10$6SyeVT5Jg8Zk9iLNPJhuFuzAKTp1n5ZZNvd8FsDNPlluSm2zB66Vy",
+      "password": "$2a$10$fWh0HrCpPuFnHY7bg1CUPOYb2ZoU7q2qnd3HVEt6y3PS/oTosUI.S",
       "name": "Phuc",
-      "id": 17
+      "id": 17,
+      "status": true
     },
     {
       "email": "tan123456@gmail.com",
-      "password": "$2a$10$DMf0Zmi5jEhlNTPl9UjHEelf2E/hGmU6GY0ytz5KjIvX/VikGMJjO",
+      "password": "$2a$10$hvdnog1xBTJKTd/IjgaI.ulSH7D.0qxdnuOv8LGwLY62danRxQeGa",
       "name": "tan123456",
-      "id": 18
+      "id": 18,
+      "status": true
+    },
+    {
+      "0": {
+        "status": true
+      },
+      "email": "tung456@gmail.com",
+      "password": "$2a$10$T2H0eQvX5NiU9YEtRLd7LuKGRQUkfDwjX99Cfw2BzqQ2Z9EeagZTK",
+      "name": "tung456",
+      "id": 19,
+      "status": true
+    },
+    {
+      "email": "tung456789@gmail.com",
+      "password": "$2a$10$jUSaeuSBhewNANqrJiKkrOmypuTfbLuE.wm6x1kbDcqq/ESEPvC9y",
+      "name": "tung456789",
+      "status": true,
+      "id": 20
+    },
+    {
+      "email": "tung123@gmail.com",
+      "password": "$2a$10$541ib7V1OM87RL6AHyM5r.QfVZJ4Q5ea9dsOONBVN2XPxlrh7SyyW",
+      "name": "123",
+      "status": true,
+      "id": 21
+    },
+    {
+      "email": "tandang123@gmail.com",
+      "password": "$2a$10$5pLyi2oMNGx7/ixEOrLf0O7MmOP/KLByfiTp7R3R/1ECg6m4mm1/i",
+      "status": true,
+      "id": 22
     }
   ],
   "products": [
@@ -355,23 +403,95 @@
   ],
   "reserve": [
     {
-      "userName": "1",
-      "addressUser": "2",
-      "phone": "3",
-      "id": 1
+      "id": 1,
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "category": "Countryside",
+      "type": {
+        "guests": 4,
+        " bedroom": 1,
+        "beds": 2,
+        "bath": 1
+      },
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "reviews": 0,
+      "price": "37",
+      "images": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
+        "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
+        "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
+      ],
+      "status": false,
+      "startDate": "",
+      "endDate": "",
+      "currentDate": "2023-06-11",
+      "total": 0
     },
     {
-      "userName": "1",
-      "addressUser": "2",
-      "phone": "3",
-      "method": "Credit or debit card",
+      "rooms": {
+        "id": 1,
+        "nameBnb": "Nature lodge hosted by Nguyen",
+        "category": "Countryside",
+        "type": {
+          "guests": 4,
+          " bedroom": 1,
+          "beds": 2,
+          "bath": 1
+        },
+        "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+        "reviews": 0,
+        "price": "37",
+        "images": [
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
+          "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
+          "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
+        ],
+        "status": true,
+        "startDate": "2023-06-11",
+        "endDate": "2023-06-15"
+      },
+      "startDate": "2023-06-11",
+      "endDate": "2023-06-11",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 4,
+      "total": 148,
+      "status": false,
       "id": 2
     },
     {
-      "method": "Credit or debit card",
-      "userName": "fgf",
-      "addressUser": "fg",
-      "phone": "fgf",
+      "rooms": {
+        "id": 1,
+        "nameBnb": "Nature lodge hosted by Nguyen",
+        "category": "Countryside",
+        "type": {
+          "guests": 4,
+          " bedroom": 1,
+          "beds": 2,
+          "bath": 1
+        },
+        "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+        "reviews": 0,
+        "price": "37",
+        "images": [
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
+          "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
+          "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
+          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
+        ],
+        "status": true,
+        "startDate": "2023-06-11",
+        "endDate": "2023-06-15"
+      },
+      "startDate": "2023-06-11",
+      "endDate": "2023-06-11",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 4,
+      "total": 148,
+      "status": false,
       "id": 3
     }
   ]

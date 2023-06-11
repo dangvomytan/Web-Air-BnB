@@ -15,7 +15,7 @@ function SignUp() {
   const navigate = useNavigate();
 
   const handleOnchangeInput = (e) => {
-    setValueInput({ ...valueInput, [e.target.name]: e.target.value })
+    setValueInput({ ...valueInput, [e.target.name]: e.target.value, status:true })
   }
 
   const handleClickSubmit = async (e) => {

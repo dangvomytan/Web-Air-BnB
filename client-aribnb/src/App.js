@@ -12,11 +12,16 @@ import Pay from './components/pay/Pay';
 import IsStays from './components/IsStays/IsStays';
 import Admin from './pages/admin/Admin'
 import { getDataUser } from './redux/reducer/UserSlice';
-// import Admin_listUser from './components/admin/header/ManageUser/admin_listUser/Admin_listUser'
+import Admin_User from './pages/admin/user/Admin_User';
+import Admin_listUser from './components/admin/manageUser/listUser/Admin_listUser';
+import Admin_Room from './pages/admin/rooms/Admin_Room';
+import { reducerAllReserve } from './redux/reducer/ReserveSlice';
+import Admin_Reserve from './pages/admin/reserve/Admin_Reserve';
 
 
 function App() {
   const dispatch=  useDispatch();
+  
   useEffect(() => {
     const listUser = async () => {
       await dispatch(getDataUser()).unwrap();
@@ -30,6 +35,14 @@ function App() {
     }
     getAllProduct();
   },[])
+
+  useEffect(()=>{
+    const getAllReserve = async () =>{
+      await dispatch(reducerAllReserve()).unwrap();
+    }
+    getAllReserve();
+  },[])
+
   return (
 <>
 <Routes>
@@ -43,9 +56,10 @@ function App() {
     <Route path='pay' element={<Pay/>}/>
   </Route>
   <Route path='/Admin' element={<Admin/>}>
-    <Route path='manage-user' />
-    <Route path='manage-rooms' />
-    <Route path='manage-reserve' />
+    <Route path='manage-user' element={<Admin_User/>}/>
+    <Route path='list-user' element={<Admin_listUser/>}/>
+    <Route path='manage-rooms' element={<Admin_Room/>}/>
+    <Route path='manage-reserve'  element={<Admin_Reserve/>} />
   </Route>
 </Routes>
 </>

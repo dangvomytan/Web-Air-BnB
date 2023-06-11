@@ -1,0 +1,33 @@
+.admin_nav
+{
+     width: 15rem;
+     padding: 1rem;
+     background-color: #dfe4ea;
+
+}
+.admin_nav .item_1
+{
+     display: flex;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+
+}
+.admin_nav .item_1:hover
+{
+background-color: var(--color-admin-bg-hover);
+/* color: var(--color-admin-text); */
+}
+.admin_nav .item_2
+{
+     display: flex;
+     align-items: center;
+
+}
+.admin_nav .item_3
+{
+     flex: 100%;
+     display: flex;
+     align-items: center;
+     padding-left: 0.5rem;
+     font-size: 1.2em;
+}

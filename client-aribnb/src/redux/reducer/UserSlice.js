@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { UserAPI } from "../../api/User";
 
-// tao bat dong bo register
+// register
 export const register = createAsyncThunk(
   "register/fetchAuth",
   async (payload) => {
@@ -10,7 +10,7 @@ export const register = createAsyncThunk(
   }
 );
 
-// tao bat dong bo login
+// Login
 export const login = createAsyncThunk("login/fetchAuth", async (payload) => {
   //call len sever xem cos tai khoan
     const responce = await UserAPI.login(payload);
@@ -18,12 +18,15 @@ export const login = createAsyncThunk("login/fetchAuth", async (payload) => {
     responce && localStorage.setItem("AccessToken", JSON.stringify(responce.accessToken));
     return responce;
 });
-
+// get all user
 export const getDataUser =  createAsyncThunk("getAllUser", async () =>{
   const responce = await UserAPI.getAllUser();
-  console.log(33,responce);
   return responce;
-
+})
+// update user
+export const updateUsers =  createAsyncThunk("updateUser",async (payload) =>{
+  const responce = await UserAPI.updateUser(payload,payload.id);
+  return responce;
 })
 
 const userSlice = createSlice({
@@ -37,7 +40,7 @@ const userSlice = createSlice({
   },
   extraReducers: {
     [register.fulfilled]: (state, action) => {
-      state = action.payload.user;
+      state = action.payload.user ;
       return state;
     },
     [login.fulfilled]: (state, action) => {
@@ -47,6 +50,11 @@ const userSlice = createSlice({
     [getDataUser.fulfilled]:(state, action) =>{
       state = action.payload;
       return state;
+    },
+    [updateUsers.fulfilled]:(state, action) =>{
+      const item = state.findIndex((user) => user.id == action.payload.id)
+      state[item] = action.payload
+      return state
     }
   },
 });

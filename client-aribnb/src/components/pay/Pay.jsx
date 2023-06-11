@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import './Pay.css'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { Button, Form } from 'react-bootstrap';
 import moment from 'moment';
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,6 +13,7 @@ function Pay() {
      const [endDate, setEndDate] = useState('');
      const [total, setTotal] = useState(0)
      const [valueInput,setValueInput] = useState([]);
+     const [infoBooking,setInfoBooking] = useState({});
      const navigate = useNavigate();
      const dispatch = useDispatch();
 
@@ -55,6 +56,18 @@ function Pay() {
                setTotal(total)
           }
      }, [rentalDuration])
+     useEffect(() => {
+               setInfoBooking({
+                    rooms:{...location.state},
+                    ...valueInput,
+                    startDate:startDate,
+                    endDate:startDate,
+                    currentDate: startDate,
+                    rentalDuration:rentalDuration,
+                    total:total,
+                    status:false
+               })
+     }, [])
 
 
      const toastError = () => {
@@ -73,7 +86,7 @@ function Pay() {
           setValueInput({...valueInput,[e.target.name]:e.target.value})
      }
      const handleOnclick = () =>{
-         dispatch(addReserve(valueInput)).unwrap();
+         dispatch(addReserve(infoBooking)).unwrap();
      }
 
      return (

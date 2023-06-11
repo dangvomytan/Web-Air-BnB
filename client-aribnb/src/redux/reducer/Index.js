@@ -6,5 +6,5 @@ import ReverveSlice from "./ReserveSlice"
 export const rootReducer = {
      user: userSlice,
      product: ProductSlice,
-     reverse: ReverveSlice
+     reserve: ReverveSlice,
 }
