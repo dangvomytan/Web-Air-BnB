@@ -43,6 +43,10 @@ function Header() {
           navigate("/search",{state:{...valueInput}})
      }
 
+     const handletToTrips = () =>{
+          navigate("/stays/trips");
+     }
+
 // console.log(userLogin);
      return (
           <>
@@ -123,7 +127,7 @@ function Header() {
                                              <div className='item_1'>
                                                   <span>Account</span>
                                              </div>
-                                             <div className='item_1'>
+                                             <div className='item_1' onClick={handletToTrips}>
                                                   <span>Trips</span>
                                              </div>
                                              <div className='item_1'>

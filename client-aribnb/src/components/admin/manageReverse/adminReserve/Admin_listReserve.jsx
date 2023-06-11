@@ -1,10 +1,23 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateReserves } from '../../../../redux/reducer/ReserveSlice';
 
 function Admin_listReserve() {
   const listReserve = useSelector((state) => state.reserve);
-  console.log(listReserve);
+  const dispatch = useDispatch();
+  // console.log(listReserve);
+
+const handleOclickCheckin =(item) =>{
+console.log(item);
+item.status ?(item = {...item}):(item = {...item,status:true})
+console.log(item);
+const updateReserve = async () =>{
+  await dispatch(updateReserves(item)).unwrap();
+} 
+updateReserve();
+}
+
   return (
     <div className='content_user'>
     <div className='item_1'>
@@ -44,7 +57,7 @@ function Admin_listReserve() {
                <td>{item.status?<box-icon color='#6ab04c' size='md' name='calendar-check'></box-icon>:<box-icon color='#f9ca24' size='md' name='calendar-x' ></box-icon>}</td>
                <td>
                <Button variant="outline-info"><box-icon name='info-square'></box-icon></Button>{' '}
-               <Button variant="outline-success"><box-icon name='task'></box-icon></Button>{' '}
+               <Button onClick={()=>handleOclickCheckin(item)} variant={item.status?'success':'outline-success'}><box-icon name='task'></box-icon></Button>{' '}
                </td>
              </tr>
            )

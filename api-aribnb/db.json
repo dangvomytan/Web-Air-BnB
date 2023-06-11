@@ -269,7 +269,7 @@
       "currentDate": "2023-06-11",
       "rentalDuration": 7,
       "total": 0,
-      "status": false,
+      "status": true,
       "id": 17
     },
     {

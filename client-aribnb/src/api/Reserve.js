@@ -10,4 +10,8 @@ export class ReserveAPI {
     const url = "/reserve";
     return axiosClient.get(url);
   }
+  static updateReserve(param,id){
+    const url=`/reserve/${id}`
+    return axiosClient.patch(url,param)
+}
 }

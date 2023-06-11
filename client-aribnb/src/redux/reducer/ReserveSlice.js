@@ -14,6 +14,14 @@ export const reducerAllReserve = createAsyncThunk(
   }
 );
 
+export const updateReserves =  createAsyncThunk("updateReserve",async (payload) =>{
+  const responce = await ReserveAPI.updateReserve(payload,payload.id);
+  return responce;
+})
+
+
+
+
 const ReserveSlice = createSlice({
   name: "reserve",
   initialState: [],
@@ -26,6 +34,11 @@ const ReserveSlice = createSlice({
       state = action.payload;
       return state;
     },
+    [updateReserves.fulfilled]:(state, action) =>{
+      const item = state.findIndex((reserve) => reserve.id == action.payload.id)
+      state[item] = action.payload
+      return state
+    }
   },
 });
 
