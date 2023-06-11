@@ -31,8 +31,16 @@ function SignIn() {
         theme: "light",
       });
       setTimeout(() => {
-        data && navigate("/");
-      }, 3000);
+        if(valueInput.email ==="admin@gmail.com")
+        {
+         data && navigate("/admin/manage-rooms");
+        }
+        else
+        {
+          data && navigate("/");
+        }
+
+      }, 2000);
     }
     catch (error) {
       // console.log(error.message);
@@ -50,7 +58,7 @@ function SignIn() {
 
 
   }
-
+console.log(22222,valueInput.email);
 
   return (
     <>

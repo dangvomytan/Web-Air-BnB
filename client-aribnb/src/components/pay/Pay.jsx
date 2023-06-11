@@ -13,9 +13,9 @@ function Pay() {
      const [startDate, setStartDate] = useState('');
      const [endDate, setEndDate] = useState('');
      const [total, setTotal] = useState(0)
-     const [valueInput,setValueInput] = useState([]);
-     const [infoBooking,setInfoBooking] = useState({});
-     const [isTrus,setIstrue] = useState(true)
+     const [valueInput, setValueInput] = useState([]);
+     const [infoBooking, setInfoBooking] = useState({});
+     const [isTrus, setIstrue] = useState(true)
      const navigate = useNavigate();
      const dispatch = useDispatch();
 
@@ -60,20 +60,19 @@ function Pay() {
           }
      }, [rentalDuration])
      useEffect(() => {
-               setInfoBooking({
-                    ...valueInput,
-                    idRoom: location.state.id,
-                    nameBnb: location.state.nameBnb,
-                    addressBnb:location.state.addressBnb,
-                    price: location.state.price,
-                    startDate:startDate,
-                    endDate:startDate,
-                    currentDate: startDate,
-                    rentalDuration:rentalDuration,
-                    total:total,
-                    status:false
-               })
-     }, [])
+          setInfoBooking({
+               ...valueInput,
+               nameBnb: location.state.nameBnb,
+               addressBnb: location.state.addressBnb,
+               price: location.state.price,
+               startDate: startDate,
+               endDate: endDate,
+               currentDate: currentDate,
+               rentalDuration: location.state.rentalDuration??rentalDuration,
+               total:location.state.total??total,
+               status: false
+          })
+     }, [rentalDuration])
 
 
      const toastError = () => {
@@ -90,32 +89,30 @@ function Pay() {
           });
      }
      const handleOnchange = (e) => {
-          setValueInput({...valueInput,[e.target.name]:e.target.value})
+          setValueInput({ ...valueInput, [e.target.name]: e.target.value })
      }
 
 
-     const handleOnclick = () =>{
-          if(isTrus)
-          {
-                        dispatch(addReserve(infoBooking)).unwrap();
-                    toast.success('Successful reservation!', {
-                         position: "top-right",
-                         autoClose: 5000,
-                         hideProgressBar: false,
-                         closeOnClick: true,
-                         pauseOnHover: true,
-                         draggable: true,
-                         progress: undefined,
-                         theme: "light",
-                    });
+     const handleOnclick = () => {
+          if (isTrus) {
+               dispatch(addReserve(infoBooking)).unwrap();
+               toast.success('Successful reservation!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+               });
           }
-          else
-          {
+          else {
                toastError();
           }
 
      }
-
+     console.log(infoBooking);
      return (
           <>
                <ToastContainer
@@ -136,7 +133,7 @@ function Pay() {
                     <div className='pay_content'>
                          <div className='pay_content_title'>
                               <box-icon type='solid' name='chevron-left'></box-icon>
-                              <span onClick={()=>navigate(-1)}>Confirm and pay</span>
+                              <span onClick={() => navigate(-1)}>Confirm and pay</span>
                          </div>
                          <hr />
                          <div className='confirm_content'>
@@ -157,16 +154,16 @@ function Pay() {
                                                   <div className='item_5'><input type="date" value={endDate} onChange={handleOnchangeEndDate} name="" id="" /></div>
                                              </div>
                                         </div>
-                                        <div className='item_2'>
+                                        {/* <div className='item_2'>
                                              <b> Guest</b>
-                                        </div>
-                                        <div className='item_2'>
+                                        </div> */}
+                                        {/* <div className='item_2'>
                                              <div className='item_3'>
                                                   <div className='item_4'><b>Quantity</b></div>
                                                   <div className='item_5'><input type="number" name="" id="" /></div>
 
                                              </div>
-                                        </div>
+                                        </div> */}
                                    </div>
 
                                    <hr />
@@ -196,26 +193,26 @@ function Pay() {
                                         <h4><b>Your info</b></h4>
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="Your name" name='userName' onChange={handleOnchange}/>
+                                        <Form.Control type="text" placeholder="Your name" name='userName' onChange={handleOnchange} />
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="Address"  name='addressUser'  onChange={handleOnchange}/>
+                                        <Form.Control type="text" placeholder="Address" name='addressUser' onChange={handleOnchange} />
                                    </div>
                                    <div className='item_2'>
-                                        <Form.Control type="text" placeholder="phone" name='phone' onChange={handleOnchange}/>
+                                        <Form.Control type="text" placeholder="phone" name='phone' onChange={handleOnchange} />
                                    </div>
                                    <hr />
                                    <div>
-                                        <Button variant="secondary" onClick={()=>handleOnclick()}>Secondary</Button>{' '}
+                                        <Button variant="secondary" onClick={() => handleOnclick()}>Secondary</Button>{' '}
                                    </div>
                               </div>
                               <div className='pay_detail'>
                                    <div className='info_room'>
                                         <div className='item_10'>
-                                            <img src={location.state.images[0]} alt="" />
+                                             <img src={location.state.images[0]} alt="" />
                                         </div >
                                         <div className='item_11'>
-                                            {location.state.nameBnb}
+                                             {location.state.nameBnb}
                                         </div>
                                         <div className='item_11'>
 
@@ -238,7 +235,7 @@ function Pay() {
                                              <div>
                                                   <div><span>Total</span></div>
                                              </div>
-                                             <div><span>$ {total+5}</span></div>
+                                             <div><span>$ {total + 5}</span></div>
                                         </div>
                                    </div>
                               </div>

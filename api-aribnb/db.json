@@ -1,160 +1,17 @@
 {
   "users": [
     {
-      "email": "tanadmin@gmail.com",
-      "password": "$2a$10$OpA6JMtB99gmhFrxXRWvA.ICxB0VxBEx3.0fHQo6h.z9lnWr4gqBG",
-      "name": "tan",
-      "id": 1,
-      "status": false
-    },
-    {
-      "email": "tan@gmail.com",
-      "password": "$2a$10$kI.i88T.MT0uPmaNKCnByuAjkhqGs/odhINKCiNQFzKwVmTrKa3RS",
-      "name": "tan",
-      "id": 2,
-      "status": false
-    },
-    {
-      "email": "tanadmin1@gmail.com",
-      "password": "$2a$10$i0qxNcnBru0/RNjmrXtaoeXyU4A9VLa9IIWl7DHSABLMBio4kP5Be",
-      "name": "tan",
-      "id": 3,
-      "status": false
-    },
-    {
-      "email": "tung@gmail.com",
-      "password": "$2a$10$QZglIxGmSfwNCslt25RQz.pfCpj1rFboP8csjq.dGTizAsUx3QXvG",
-      "name": "tung",
-      "id": 4,
-      "status": false
-    },
-    {
-      "email": "hieu@gmail.com",
-      "password": "$2a$10$51Apf0gCkrw.CncVhFH9w.B0M1xXcejbSYxQZgz1A4nQ2iCSFKB9m",
-      "name": "hieu",
-      "id": 5,
-      "status": true
-    },
-    {
-      "email": "hoang@gmail.com",
-      "password": "$2a$10$dLBnpaWewEK935bG4W5EtuPdzK3enV1BguLeJhPZ29PDkL3COpgHK",
-      "name": "hoang",
-      "id": 6,
-      "status": true
-    },
-    {
-      "email": "hoang1@gmail.com",
-      "password": "$2a$10$QeR9VylY9bWHFpNSuITPQ.5F.YDrBl/jaWoDTfk5b0HutjsMcOCMS",
-      "name": "hoang",
-      "id": 7,
-      "status": true
-    },
-    {
-      "email": "tanadmia33@gmail.com",
-      "password": "$2a$10$VZwBBwzpFKJaw/ttq4iSL.kPxyJdEb4.hcg0iZnvbabLcxxu21wKm",
-      "name": "tan",
-      "id": 8,
-      "status": true
-    },
-    {
-      "email": "tanadmin333@gmail.com",
-      "password": "$2a$10$VnTB40fU7AJABzoQ6XRRdeIVUzK/ONZIKyaghA5kEOXRM3PxKDSYq",
-      "name": "tan",
-      "id": 9,
-      "status": false
-    },
-    {
-      "email": "tanadmin33344@gmail.com",
-      "password": "$2a$10$/2IGFzLg94OVQgNtYMbX1.vXBPeXo1vnsI3Qfldm/gi428VqyeVBu",
-      "name": "tan",
-      "id": 10,
-      "status": false
-    },
-    {
-      "email": "tanadminasda@gmail.com",
-      "password": "$2a$10$npoBe2LUr7Ar4kkgeGASK.OjG.P6z39kFNXe2Zyd0sEoaVXM8gPGa",
-      "name": "tung",
-      "id": 11,
-      "status": false
-    },
-    {
-      "email": "tanadmin144@gmail.com",
-      "password": "$2a$10$V3y33OHvzP6ULeLODnNXy.4TJ6hzWUGb4pSggboUZTYSBzMV6hgGa",
-      "name": "tan",
-      "id": 12,
-      "status": true
-    },
-    {
-      "email": "tanadmin16644@gmail.com",
-      "password": "$2a$10$JeV5WJwAPW6YKKaozvVR4eeU8EDVUffbltZlxAFFA0b2Tfjbf.xfm",
-      "name": "tan",
-      "id": 13,
-      "status": false
-    },
-    {
-      "email": "tanadminew@gmail.com",
-      "password": "$2a$10$/lbpkkdRBw2FJXiPHZSWxOmMFQlyh11GorZZbr3kj.pU45UOtGZEO",
-      "name": "tan",
-      "id": 14,
-      "status": false
-    },
-    {
-      "email": "tanadminsdf@gmail.com",
-      "password": "$2a$10$rfWnpmqyaNeFV8GK.V39kOJt7lhaqQuOq531ZIqlCrNh5vXMHWT5e",
-      "name": "tan",
-      "id": 15,
-      "status": false
+      "email": "admin@gmail.com",
+      "password": "$2a$10$SIblYCCJnCBbLl4zyESB5uqmiMwS1rWmz7LjsLw97cdWcceIOnyki",
+      "status": true,
+      "name": "admin",
+      "id": 1
     },
     {
       "email": "tandang@gmail.com",
-      "password": "$2a$10$FQAQ6ppGgtKDG0TmmoyKGevyy.8hhVEzSMJHw6g.wgBc1v8AadueK",
-      "name": "tan dang",
-      "id": 16,
-      "status": false
-    },
-    {
-      "email": "phuc@gmail.com",
-      "password": "$2a$10$fWh0HrCpPuFnHY7bg1CUPOYb2ZoU7q2qnd3HVEt6y3PS/oTosUI.S",
-      "name": "Phuc",
-      "id": 17,
-      "status": true
-    },
-    {
-      "email": "tan123456@gmail.com",
-      "password": "$2a$10$hvdnog1xBTJKTd/IjgaI.ulSH7D.0qxdnuOv8LGwLY62danRxQeGa",
-      "name": "tan123456",
-      "id": 18,
-      "status": true
-    },
-    {
-      "0": {
-        "status": true
-      },
-      "email": "tung456@gmail.com",
-      "password": "$2a$10$T2H0eQvX5NiU9YEtRLd7LuKGRQUkfDwjX99Cfw2BzqQ2Z9EeagZTK",
-      "name": "tung456",
-      "id": 19,
-      "status": true
-    },
-    {
-      "email": "tung456789@gmail.com",
-      "password": "$2a$10$jUSaeuSBhewNANqrJiKkrOmypuTfbLuE.wm6x1kbDcqq/ESEPvC9y",
-      "name": "tung456789",
+      "password": "$2a$10$mvUBWghE423yNb2QtdHUWOoFnVOEcrDDt0zy/2BkDO7ARRwJhsIna",
       "status": true,
-      "id": 20
-    },
-    {
-      "email": "tung123@gmail.com",
-      "password": "$2a$10$541ib7V1OM87RL6AHyM5r.QfVZJ4Q5ea9dsOONBVN2XPxlrh7SyyW",
-      "name": "123",
-      "status": true,
-      "id": 21
-    },
-    {
-      "email": "tandang123@gmail.com",
-      "password": "$2a$10$5pLyi2oMNGx7/ixEOrLf0O7MmOP/KLByfiTp7R3R/1ECg6m4mm1/i",
-      "status": true,
-      "id": 22
+      "id": 2
     }
   ],
   "products": [
@@ -403,19 +260,164 @@
   ],
   "reserve": [
     {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
       "id": 1
     },
     {
-      "idRoom": 7,
-      "nameBnb": "Room in a serviced apartment hosted by Ngoc",
-      "addressBnb": "Mân Thái, Đà Nẵng, Vietnam",
-      "price": "13",
-      "startDate": "",
-      "endDate": "",
-      "currentDate": "",
-      "total": 0,
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 2,
+      "total": 74,
       "status": false,
       "id": 2
+    },
+    {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 3
+    },
+    {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 4
+    },
+    {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 5
+    },
+    {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 6
+    },
+    {
+      "nameBnb": "Nature lodge hosted by Nguyen",
+      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
+      "price": "37",
+      "startDate": "2023-07-06",
+      "endDate": "2023-07-07",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 7
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 8
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "",
+      "endDate": "",
+      "currentDate": "2023-06-11",
+      "total": 0,
+      "status": false,
+      "id": 9
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 224,
+      "status": false,
+      "id": 10
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-23",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 6,
+      "total": 224,
+      "status": false,
+      "id": 11
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-25",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 4,
+      "total": 192,
+      "status": false,
+      "id": 12
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-22",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 7,
+      "total": 128,
+      "status": false,
+      "id": 13
+    },
+    {
+      "nameBnb": "Trang An Tam Gia Trang Resort Room 2",
+      "addressBnb": "Thành phố Ninh Bình, Ninh Bình, Vietnam",
+      "price": "32",
+      "startDate": "2023-06-23",
+      "endDate": "2023-06-29",
+      "currentDate": "2023-06-11",
+      "rentalDuration": 6,
+      "total": 224,
+      "status": false,
+      "id": 14
     }
   ]
 }

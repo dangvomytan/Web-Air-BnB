@@ -5,7 +5,7 @@ import './Admin_listUser.css'
 import { updateUsers } from '../../../../redux/reducer/UserSlice';
 
 function Admin_listUser() {
-     const listUser = useSelector((state) => state.user);
+     const listUser = useSelector((state) => state.user)??[];
      const dispatch = useDispatch();
      
 
