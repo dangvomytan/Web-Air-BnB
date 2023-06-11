@@ -2,24 +2,24 @@
   "users": [
     {
       "email": "tanadmin@gmail.com",
-      "password": "$2a$10$ROB/ATYMkwFMUomBhFP/iO60y6MdiYyX2Cs7f2XNstkPmL7qodQGK",
+      "password": "$2a$10$OpA6JMtB99gmhFrxXRWvA.ICxB0VxBEx3.0fHQo6h.z9lnWr4gqBG",
       "name": "tan",
       "id": 1,
-      "status": true
+      "status": false
     },
     {
       "email": "tan@gmail.com",
-      "password": "$2a$10$d2t2b.sdqyiOUQkKRdCNheTdf4.AzgoBPJeSy06hgoN1UKDCZfUGu",
+      "password": "$2a$10$kI.i88T.MT0uPmaNKCnByuAjkhqGs/odhINKCiNQFzKwVmTrKa3RS",
       "name": "tan",
       "id": 2,
-      "status": true
+      "status": false
     },
     {
       "email": "tanadmin1@gmail.com",
-      "password": "$2a$10$WJPrdqnA/GEFHjPLlXZqJOFgB28/MFZp3/t5DdMxIhR5CisKlA8ey",
+      "password": "$2a$10$i0qxNcnBru0/RNjmrXtaoeXyU4A9VLa9IIWl7DHSABLMBio4kP5Be",
       "name": "tan",
       "id": 3,
-      "status": true
+      "status": false
     },
     {
       "email": "tung@gmail.com",
@@ -58,24 +58,24 @@
     },
     {
       "email": "tanadmin333@gmail.com",
-      "password": "$2a$10$EcHcFqcqQmHF4v3km6y.b.xMBPtfs53Zc7hTg5Afg.XVKXKi0o5jq",
+      "password": "$2a$10$VnTB40fU7AJABzoQ6XRRdeIVUzK/ONZIKyaghA5kEOXRM3PxKDSYq",
       "name": "tan",
       "id": 9,
-      "status": true
+      "status": false
     },
     {
       "email": "tanadmin33344@gmail.com",
-      "password": "$2a$10$18Ktes/HjIctc2CpF10yoeQaspWsOGyU90OuiG/OK7K2BOLbzg/7G",
+      "password": "$2a$10$/2IGFzLg94OVQgNtYMbX1.vXBPeXo1vnsI3Qfldm/gi428VqyeVBu",
       "name": "tan",
       "id": 10,
-      "status": "true"
+      "status": false
     },
     {
       "email": "tanadminasda@gmail.com",
-      "password": "$2a$10$dN6SDIczNOKbSk6BEYH1jutj/VXDk9NVAAYyYzQaxS8HXUYd9Hz56",
+      "password": "$2a$10$npoBe2LUr7Ar4kkgeGASK.OjG.P6z39kFNXe2Zyd0sEoaVXM8gPGa",
       "name": "tung",
       "id": 11,
-      "status": "true"
+      "status": false
     },
     {
       "email": "tanadmin144@gmail.com",
@@ -86,31 +86,31 @@
     },
     {
       "email": "tanadmin16644@gmail.com",
-      "password": "$2a$10$FkK4nqnkYGd.NzzaWBQiautGG4sBWX9787AIT09CVVqPG9PY9M2eG",
+      "password": "$2a$10$JeV5WJwAPW6YKKaozvVR4eeU8EDVUffbltZlxAFFA0b2Tfjbf.xfm",
       "name": "tan",
       "id": 13,
-      "status": true
+      "status": false
     },
     {
       "email": "tanadminew@gmail.com",
-      "password": "$2a$10$BWyP9aGrdiqFNSPFHz7Dc.Yf0sgbUf63gBVSfxCnbHgaHaHVFm06.",
+      "password": "$2a$10$/lbpkkdRBw2FJXiPHZSWxOmMFQlyh11GorZZbr3kj.pU45UOtGZEO",
       "name": "tan",
       "id": 14,
-      "status": true
+      "status": false
     },
     {
       "email": "tanadminsdf@gmail.com",
-      "password": "$2a$10$oSFWjz5L2Q8RdufUXElReexDIhu2F6MAIt1X7He7j2FV65a0nZTNq",
+      "password": "$2a$10$rfWnpmqyaNeFV8GK.V39kOJt7lhaqQuOq531ZIqlCrNh5vXMHWT5e",
       "name": "tan",
       "id": 15,
-      "status": true
+      "status": false
     },
     {
       "email": "tandang@gmail.com",
-      "password": "$2a$10$1aKokwuKOfjSeszDypXMiO9VosDpJdmSqA2AiZTcEJgLHomwARw3G",
+      "password": "$2a$10$FQAQ6ppGgtKDG0TmmoyKGevyy.8hhVEzSMJHw6g.wgBc1v8AadueK",
       "name": "tan dang",
       "id": 16,
-      "status": true
+      "status": false
     },
     {
       "email": "phuc@gmail.com",
@@ -403,96 +403,19 @@
   ],
   "reserve": [
     {
-      "id": 1,
-      "nameBnb": "Nature lodge hosted by Nguyen",
-      "category": "Countryside",
-      "type": {
-        "guests": 4,
-        " bedroom": 1,
-        "beds": 2,
-        "bath": 1
-      },
-      "addressBnb": "Sa Pa, Lao Cai, Vietnam",
-      "reviews": 0,
-      "price": "37",
-      "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
-        "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
-        "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
-      ],
-      "status": false,
+      "id": 1
+    },
+    {
+      "idRoom": 7,
+      "nameBnb": "Room in a serviced apartment hosted by Ngoc",
+      "addressBnb": "Mân Thái, Đà Nẵng, Vietnam",
+      "price": "13",
       "startDate": "",
       "endDate": "",
-      "currentDate": "2023-06-11",
-      "total": 0
-    },
-    {
-      "rooms": {
-        "id": 1,
-        "nameBnb": "Nature lodge hosted by Nguyen",
-        "category": "Countryside",
-        "type": {
-          "guests": 4,
-          " bedroom": 1,
-          "beds": 2,
-          "bath": 1
-        },
-        "addressBnb": "Sa Pa, Lao Cai, Vietnam",
-        "reviews": 0,
-        "price": "37",
-        "images": [
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
-          "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
-          "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
-        ],
-        "status": true,
-        "startDate": "2023-06-11",
-        "endDate": "2023-06-15"
-      },
-      "startDate": "2023-06-11",
-      "endDate": "2023-06-11",
-      "currentDate": "2023-06-11",
-      "rentalDuration": 4,
-      "total": 148,
+      "currentDate": "",
+      "total": 0,
       "status": false,
       "id": 2
-    },
-    {
-      "rooms": {
-        "id": 1,
-        "nameBnb": "Nature lodge hosted by Nguyen",
-        "category": "Countryside",
-        "type": {
-          "guests": 4,
-          " bedroom": 1,
-          "beds": 2,
-          "bath": 1
-        },
-        "addressBnb": "Sa Pa, Lao Cai, Vietnam",
-        "reviews": 0,
-        "price": "37",
-        "images": [
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/219bf491-a8a1-478b-9dc0-8ecbee755952.jpeg",
-          "https://a0.muscache.com/im/pictures/dd3d00b9-f084-43f1-8c3e-f0ad8217ab62.jpg",
-          "https://a0.muscache.com/im/pictures/076a9332-7d2e-4812-9f8f-1edf603bf2da.jpg",
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/d3c200e5-0813-4696-82b6-c9230e26ff68.jpeg",
-          "https://a0.muscache.com/im/pictures/miso/Hosting-604658660796626022/original/54cb32a9-37ae-4078-a682-c126eae09242.jpeg"
-        ],
-        "status": true,
-        "startDate": "2023-06-11",
-        "endDate": "2023-06-15"
-      },
-      "startDate": "2023-06-11",
-      "endDate": "2023-06-11",
-      "currentDate": "2023-06-11",
-      "rentalDuration": 4,
-      "total": 148,
-      "status": false,
-      "id": 3
     }
   ]
 }

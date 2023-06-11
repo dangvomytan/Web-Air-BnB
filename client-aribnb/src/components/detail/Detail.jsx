@@ -68,7 +68,7 @@ function Detail() {
           if(endDate && startDate)
           {
                const bookingData = {...location.state,startDate:startDate,endDate:endDate};
-               navigate("/stays/pay",{state:{...bookingData}});
+               navigate("/stays/comfirm-pay",{state:{...bookingData}});
           }
           else
           {

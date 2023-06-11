@@ -6,6 +6,7 @@ import moment from 'moment';
 import { ToastContainer, toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { addReserve } from '../../redux/reducer/ReserveSlice';
+import FooterSign from '../footer-sign/Footer-Sign';
 
 function Pay() {
      const location = useLocation();
@@ -14,6 +15,7 @@ function Pay() {
      const [total, setTotal] = useState(0)
      const [valueInput,setValueInput] = useState([]);
      const [infoBooking,setInfoBooking] = useState({});
+     const [isTrus,setIstrue] = useState(true)
      const navigate = useNavigate();
      const dispatch = useDispatch();
 
@@ -54,12 +56,16 @@ function Pay() {
           if (rentalDuration) {
                const total = Number(location.state.price) * Number(rentalDuration)
                setTotal(total)
+               setIstrue(true);
           }
      }, [rentalDuration])
      useEffect(() => {
                setInfoBooking({
-                    rooms:{...location.state},
                     ...valueInput,
+                    idRoom: location.state.id,
+                    nameBnb: location.state.nameBnb,
+                    addressBnb:location.state.addressBnb,
+                    price: location.state.price,
                     startDate:startDate,
                     endDate:startDate,
                     currentDate: startDate,
@@ -71,6 +77,7 @@ function Pay() {
 
 
      const toastError = () => {
+          setIstrue(false)
           toast.error('Please check your booking information!', {
                position: "top-right",
                autoClose: 5000,
@@ -85,8 +92,28 @@ function Pay() {
      const handleOnchange = (e) => {
           setValueInput({...valueInput,[e.target.name]:e.target.value})
      }
+
+
      const handleOnclick = () =>{
-         dispatch(addReserve(infoBooking)).unwrap();
+          if(isTrus)
+          {
+                        dispatch(addReserve(infoBooking)).unwrap();
+                    toast.success('Successful reservation!', {
+                         position: "top-right",
+                         autoClose: 5000,
+                         hideProgressBar: false,
+                         closeOnClick: true,
+                         pauseOnHover: true,
+                         draggable: true,
+                         progress: undefined,
+                         theme: "light",
+                    });
+          }
+          else
+          {
+               toastError();
+          }
+
      }
 
      return (
@@ -218,7 +245,6 @@ function Pay() {
                          </div>
                     </div>
                </div>
-
           </>
      )
 }
