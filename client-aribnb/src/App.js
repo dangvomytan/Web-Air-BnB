@@ -19,6 +19,7 @@ import { reducerAllReserve } from './redux/reducer/ReserveSlice';
 import Admin_Reserve from './pages/admin/reserve/Admin_Reserve';
 import ConfirmPay from './pages/confirm-pay/Confirm-pay';
 import Trips from './pages/trips/Trips';
+import Search from './pages/search/Search';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
 <>
 <Routes>
   <Route path='/' index element={<Home/>}/>
+  <Route path='/search' element={<Search/>}/>
   <Route path='/rooms' element={<Rooms/>}/>
   <Route path='/auth'>
     <Route path='sign-up' element={<SignUp/>}/>

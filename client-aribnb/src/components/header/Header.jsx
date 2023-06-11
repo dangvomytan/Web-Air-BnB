@@ -11,6 +11,7 @@ function Header() {
      const [searchOpen, setSearchOpen] = useState(false);
      const [infoOpen, setInfoOpen] = useState(false);
      const [isActive, setIsActive] = useState(false);
+     const [valueInput,setValueInput] = useState([])
      const dispatch =useDispatch();
      const navigate = useNavigate();
 
@@ -34,7 +35,15 @@ function Header() {
                navigate("/auth/sign-in");
              }, 500);
      }
-console.log(userLogin);
+
+     const handleOnchange = (e) => {
+          setValueInput({...valueInput,[e.target.name]:e.target.value});
+     }
+     const handleOnclickSearch= () =>{
+          navigate("/search",{state:{...valueInput}})
+     }
+
+// console.log(userLogin);
      return (
           <>
                <div className='header_body'>
@@ -80,7 +89,7 @@ console.log(userLogin);
                                         <div className='item_11'>
                                              <div className='item_12'>
                                                   <label htmlFor="">Where</label>
-                                                  <input className='item' type="text" name="" id="" placeholder='Search ...' />
+                                                  <input className='item' type="text" name="searchWhere" id="" placeholder='Search ...' onChange={handleOnchange}/>
                                              </div>
                                              <div className='item_12'>
                                                   <label htmlFor="">Start</label>
@@ -94,9 +103,9 @@ console.log(userLogin);
                                                   <label htmlFor="">Guests</label>
                                                   <input className='item item_31' type="number" name="" id="" min={1} /></div>
                                         </div>
-                                        <div className='item_21'>
+                                        <button className='item_21' onClick={()=>handleOnclickSearch()}>
                                              <box-icon size='md' color='var(--color-white)' name='search'></box-icon>
-                                        </div>
+                                        </button>
                                    </div>
                               </div>
                          </div>

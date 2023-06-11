@@ -10,7 +10,6 @@ export const reducerAllReserve = createAsyncThunk(
   "Reserve/fetchCallAllReserve",
   async () => {
     const responce = await ReserveAPI.getAllReserve();
-
     return responce;
   }
 );

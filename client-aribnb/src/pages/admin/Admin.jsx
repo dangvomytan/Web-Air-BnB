@@ -1,9 +1,11 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Navigate, Outlet } from 'react-router-dom'
 
 function Admin() {
-  return (
-    <div><Outlet/></div>
+  const [hasToken] = useState(localStorage.getItem("AccessToken"))
+  const isAdmin = JSON.parse(localStorage.getItem("Users"))
+  return(
+      (hasToken && hasToken !== "" && hasToken !== null && isAdmin.email =="admin@gmail.com") ? <Outlet/> : <Navigate to="/" />
   )
 }
 
